@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simvla • Admin</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <link rel="shortcut icon" href="http://simvla.com/favicon.ico" >
+    <%= stylesheet_link_tag "backend-admin", :media => "all" %>
+    <%= javascript_include_tag "backend" %>
+    <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<div class="container">
+  <%= render :partial => "layouts/shared/menu_admin" %>
+  <%= yield %>
+
+</body>
+</html>

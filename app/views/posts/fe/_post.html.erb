@@ -1,0 +1,35 @@
+
+<article id="<%=post.id%>" class="post">
+
+  <% if current_user.present? && current_user.role?(:admin) %>
+    <%= link_to "Edit", edit_post_path(post), :target => "_blank", :class => "edit_post" %>
+  <% end %>
+
+<div id="datebar">
+<time id="top_time" class="date2check" datetime="<%=post.created_at.strftime("%Y-%m-%d")%>"><%=post.created_at.strftime("%B %d, %Y")%></time>
+</div>
+ <h2 class="entry-title">
+        <%= link_to post.title, post, :style => "border: none; !important;" %>
+        <%if post.link.present? %>
+          <%=link_to '<i class="icon-link" style="font-size: 20px; margin-left: 15px;"></i>'.html_safe, post.link%>
+        <%end%>
+    </h2>
+
+    <div id="postSpecs" style="letter-spacing: 0.1em;">
+            <%= post.world_count %>
+            words &#8226;
+            reading time
+
+                    <%= pluralize post.reading_time, "minute" %>
+    </div>
+
+    <p>
+        <%=raw post.get_rc %>
+    </p>
+
+
+   <div id="likes" class="click_like">
+        <a href="#" >
+    <i class="icon-thumbs-up" onClick="make_count(jQuery(this)); return false;" style="margin-left: 0px;" data-id="<%=post.id%>"> <%=post.likes.to_i%></i></a>
+    </div>
+</article>

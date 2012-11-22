@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="twelve columns">
+    </div>
+  </div>
+  <div class="row">
+  <div class="four columns">
+      <h4><i class="ss-icon" style="font-size: 20px;color: #7D8295;margin-right: -19px;">barchart</i> Members & Content Stats</h4>
+      <p>Simvla has <strong><%= User.all.count %></strong> members, <strong><%= Post.all.count %></strong> published posts and <strong><%= Post.likes_count %></strong> total likes.</p>
+      <p style="margin-bottom: 50px;"><strong><%=Post.words_count%></strong> words and <strong><%=Post.reading_times%></strong> minutes of content delivered so far.</p>
+      <h4><i class="ss-icon" style="font-size: 20px;color: #7D8295;margin-right: -18px;">calendar</i> Latest Network Posts</h4>
+      <ul class="square">
+        <% Post.where(:is_public => true).order("created_at desc").limit(10).each do |post| %>
+          <li>
+            <%= link_to post.title, post_url(post, :subdomain => post.user.subdomain, :port => nil), :style => "border: none; !important;" %>
+            by
+            <strong><%= post.user.full_name %></strong>
+  		    </li>
+        <% end %>
+      </ul>
+      <h4><i class="ss-icon" style="font-size: 20px;color: #7D8295;margin-right: -8px;">target</i> Newest Members</h4>
+      <ul class="square">
+        <% User.author_enabled(10).each do |user| %>
+          <li><strong><%= user.full_name %></strong> &mdash; <%= user.skill %></li>        
+        <% end %>
+      </ul>
+      <h4><i class="ss-icon" style="font-size: 20px;color: #7D8295;margin-right: -4px;">inbox</i> Incoming Applications</h4>
+      <ul class="square">
+        <% User.author_disabled(1000).each do |user| %>
+          <li>
+            <strong><%= user.full_name %></strong> &mdash; <%= user.skill %>
+            <%= link_to "Review", edit_member_path(user), :class => "tiny secondary button", :style => "padding: 5px;font-size: 15px;text-transform: capitalize;font-family: ProximaNova-Bold,sans-serif;background: none;color: #555;"%>
+            <%= link_to "Remove", member_path(user, :from=>"dashboard"), :confirm => 'Are you sure?', :method => :delete, :class => "tiny secondary button", :style => "padding: 5px;font-size: 15px;text-transform: capitalize;font-family: ProximaNova-Bold,sans-serif;background: none;color: #555;"%>
+            
+          </li>        
+        <% end %>        
+      </ul>
+
+    </div>
+  </div>

@@ -1,0 +1,36 @@
+<div class="sidebar"><!-- Sidebar -->
+    <div class="navContiner">
+    <a href="https://simvla.com/"><h1 style="font-family: Conv_ProximaNova-Black;background: black;color: white;padding-top: 30px;margin-top: -1px;text-align: center;font-size: 70px;padding-bottom: 24px;">S</h1></a>
+        <ul id="nav"><!-- Navigation -->
+          <li>
+          <%= link_to dashboard_index_path do %>
+          <i class="ss-icon" style="font-size: 50px; color: #7d8295;">dashboard</i>
+          <% end %>
+          </li>
+            <li>
+                <a href="#"><i class="ss-icon" style="font-size: 50px; color: #7d8295;">users</i> </a>
+                <!-- Flyout menu -->
+                <ul class="flyout">
+                    <li><span></span></li>
+                    <li>
+                    <%= link_to members_path do %>
+                      &mdash; Active Members
+                    <% end %>
+                    </li>
+                    <li>
+                    <%= link_to new_member_path do %>
+                      &mdash; Add New Members
+                    <% end %>
+                    </li>
+                </ul>
+            </li>
+            <li>
+              <%= link_to '/sign_out', :method => :delete do %>
+                <i class="ss-icon" style="font-size: 50px; color: #7d8295;">lock</i>
+              <% end %>
+            </li>
+
+    </div>
+    <div class="flyoutBg"></div>
+</div>
+</div>

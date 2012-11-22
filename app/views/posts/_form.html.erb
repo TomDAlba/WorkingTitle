@@ -1,0 +1,87 @@
+<% if @post.new_record? %>
+  <div id="new_record" data-value="true"></div>
+<% else %>
+  <div id="new_record" data-value="false"></div>
+<% end %>
+<%= form_for(@post) do |f| %>
+  <%= f.hidden_field :user_id %>
+  <%= hidden_field_tag :preview, "false", :id => "preview" %>
+  <div class="new_post_visible"  style="display:none">
+    <%= f.check_box :is_public %>
+  </div>
+    <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="wrap">
+            <p>
+                <%= f.text_field :title, :class => "text", :placeholder => "Title Here", :size => "60", :tabindex => "1" %>
+            </p>
+
+            <p>
+              <%=image_tag 'load.gif', :style=>'position:absolute;display:none',id: 'loader'%>
+              <%= f.text_area :body, :placeholder => "Write post here", :size => "60", :tabindex => "2" %>
+            </p>
+    </div>
+
+    <div class="buttons">
+        <div class="double">
+            <input type="radio" class="RadioClass" name="post_status" value="draft" checked="<%= !@post.is_public ? 'checked' : '' %>" id="">
+            <a href="#" class="button <%= !@post.is_public ? 'checked' : '' %>" data-id="<%=@post.id%>" data-action="false">Idea</a>
+
+            <input type="radio" class="RadioClass" name="post_status" value="publish" checked="<%= @post.is_public ? 'checked' : '' %>">
+            <a href="#" class="button <%= @post.is_public ? 'checked' : '' %>" data-id="<%=@post.id%>" data-action="true">Public</a>
+        </div>
+         <%=link_to "External Source",'#', :style => "background: #F76;",:class=>'button show_hide black'%>
+<<<<<<< HEAD
+         <%= f.submit "Save", :style => "font-size: 12px; width: 118px;",:class=>"button" %>
+=======
+         <%=link_to "Preview", "#", :id => "preview1", :data => {:href => preview_post_path(@post)}, :class=>'button show_hide black'%>
+         <%=link_to "Save", "#", :id => "save", :class=>'button show_hide black'%>
+>>>>>>> somefix
+         <%=link_to "Delete", @post,confirm: 'Are you sure?',method: :delete,:class=>"button remove black"%>
+         <%=link_to posts_path,:class=>'button black' do %>
+           <i class="icon-list-ul" style="font-size: 20px; color: white; margin-top: 5px;"></i>
+         <%end%>
+         </div>
+        <div class="slidingDiv" style="display: block;">
+        <%= f.text_field :link, :class => "text", :placeholder => "Where do we go?", :size => "60", :tabindex => "1" %>
+    </div>
+<% end %>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $notice = $('p.wps-notice');
+        if($notice.length) {
+            $notice.fadeOut(2000);
+        }
+    });
+    
+    $('#preview1').live('click', function(event){
+        event.preventDefault();
+        $("#preview").val('true')
+        $('.edit_post').attr("target","_blank");
+        $('.edit_post').submit();
+    });
+    $('#save').live('click', function(event){
+        event.preventDefault();
+        $("#preview").val('false')
+        $('.edit_post').attr("target","");
+        $('.edit_post').submit();
+    });
+</script>
+
+<div id="p_post" style="display:none;">
+<%= form_for(@post, :remote => true) do |f| %>
+  <%= f.text_field :id %>
+  <%= f.check_box :is_public, :class => "p_post_visible" %>
+  <%=f.submit "sss", :class => "button"%>
+<% end %>
+</div>

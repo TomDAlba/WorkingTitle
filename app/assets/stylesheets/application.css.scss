@@ -1,0 +1,27 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require webfonts/ss-social
+ *= require webfonts/ss-standard
+ *= require_tree ./fe
+*/
+
+.field_with_errors label{
+    color:#F25A5A
+}
+
+#error_explanation {
+width: 885px;
+margin: 14px auto auto auto;
+font-size: 38px;
+font-family: "proxima-nova", sans-serif;
+font-weight: 800;
+color: black;
+}

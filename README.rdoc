@@ -1,0 +1,21 @@
+For new project cloning:
+  git clone https://github.com/iamues/Simvla.git
+
+For existing project:
+  git pull
+  cd Simvla
+  bundle install
+  rake db:create
+  rake db:migrate
+  rake seed:create_roles
+  rake seed:create_admin
+  rake seed:create_data
+  rails s
+
+
+Add Roles to Admin
+  rails c
+  User.first << Role.first
+
+Activate Users
+  User.all.each {|u| u.is_enabled=true and u.save}

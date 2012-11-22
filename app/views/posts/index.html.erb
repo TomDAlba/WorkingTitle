@@ -1,0 +1,42 @@
+<div class="wrap">
+<div class="module">
+    <div class="ideas">
+        <h2>
+            <%= link_to "New Post", new_post_path, :style => "background: #5AB1F3;",:class=> 'button new-entry' %>
+            Drafts
+        </h2>
+
+        <%= form_for Post.new, :style => "width:103%;",:class => "form-idea" do |f| %>
+        <span style="display:none">
+            <%= f.text_field :user_id, :value => current_user.id %>
+            <%= f.check_box :is_public %>
+        </span>
+        <%= f.text_field :title, :style => "font-size: 20px; margin-left: 19px;",:class => "start_typing", :placeholder => "Type something then hit Enter..."%>
+        <div class="hidden-submit"><input type="submit" tabindex="-1"/></div>
+        <% end %>
+
+        <% @posts_draft.each do |post| %>
+        <p>
+        <%= link_to post.title, edit_post_path(post) %>
+        </p>
+        <% end %>
+    </div><!-- .ideas -->
+</div><!-- .ideas -->
+
+
+<div class="published module">
+    <h2>Live Posts</h2>
+    <% @posts_visible.each do |post| %>
+    <p>
+        <span class="word-count">
+          <%= post.world_count %> Words • <%=post.likes%>
+          <i class="icon-thumbs-up" style="font-size: 14px; color: white; margin-left: 0px;"></i>
+          – Posted <%=post.created_at.strftime("%B %d, %Y")%>
+        </span>
+     </p>
+       <p>
+          <%= link_to post.title, edit_post_path(post)  %>
+      </p>
+    <% end %>
+</div>
+</div>

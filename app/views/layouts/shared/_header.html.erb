@@ -1,0 +1,24 @@
+<section id="intro-wrap" data-winht="0" >
+  <section id="nav-wrap">
+    <ul id="nav" class="clearfix">			
+      <ul class="button-group radius">
+        <li>
+          <%= link_to "Login", new_user_session_path, :class => "button radius hide-for-small"%>
+        </li>
+        <li>
+          <%= link_to "Apply", new_message_path, :class => "button radius hide-for-small"%>
+        </li>
+        <li><a href="mailto:hello@simvla.com" class="button radius hide-for-small">Contact</a></li>
+        <li><a href="http://twitter.com/simvlanetwork" class="button radius hide-for-small" style="color: skyblue;">Follow on Twitter</a></li>
+        <li>
+          <%= link_to "Ntwrk Feed", member_path(User.where(:email => "admin@simvla.com").first, :format => :rss), :class =>  "button radius hide-for-small", :style =>  "color: salmon;" %>
+          
+          
+        </li>
+      </ul>
+      <%= link_to "Simvla", root_path, :id => :logo%>
+    </ul><!-- nav --> 
+  </section><!-- nav-wrap -->		 
+
+  <div id="intro" class="clearfix"></div><!--/.intro -->
+</section><!-- Section #1 / Intro-wrap -->
