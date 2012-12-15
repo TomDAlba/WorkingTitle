@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show, :add_like]
-  #load_and_authorize_resource :class => false, :except => [:index, :show, :add_like]
+  load_and_authorize_resource :class => false, :except => [:index, :show, :add_like]
   # GET /posts
   # GET /posts.json
   def index
