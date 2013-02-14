@@ -25,8 +25,9 @@ See [https://github.com/brianmario/mysql2](https://github.com/brianmario/mysql2)
     User.first << Role.first
 #####Activate Users
     User.all.each {|u| u.is_enabled=true and u.save}
-    
-######Copyright © 2012 Andrea Grasso // [@iamues](http://twitter.com/iamues) // [madebyues.com](http://madebyues.com)
+   
+   
+######Copyright © 2013 Dynamatik // [@FaisalAbid](http://twitter.com/FaisalAbid) // [@Dynamatik](http://twitter.com/_Dynamatik) // [Dynamatik.com](http://dynamatik.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
