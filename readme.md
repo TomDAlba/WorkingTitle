@@ -1,12 +1,12 @@
 ##Hosted Solution
-We provide a fully hosted solution running on world class cloud hosting and providing a fast and functional alternative. Apply at [https://simvla.com/join/index](https://simvla.com/join/index)
+We provide a fully hosted solution running on world class cloud hosting and providing a fast and functional alternative. Apply at [https://simvla.com](https://simvla.com)
 
 ##Project Cloning
 
 #####Install mysql2 dependencies. 
 See [https://github.com/brianmario/mysql2](https://github.com/brianmario/mysql2)
 #####Clone the repo
-    git clone https://github.com/iamues/Simvla-Network.git
+    git clone https://github.com/FaisalAbid/Simvla-Network.git
 
 ##Run the Project
 
