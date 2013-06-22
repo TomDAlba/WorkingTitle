@@ -11,7 +11,6 @@ See [https://github.com/brianmario/mysql2](https://github.com/brianmario/mysql2)
 ##Run the Project
 
     cd Simvla-Network
-    git pull
     bundle install
     rake db:create
     rake db:migrate
