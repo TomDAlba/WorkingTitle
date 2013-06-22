@@ -1,7 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/FaisalAbid/Simvla-Network.png)](https://codeclimate.com/github/FaisalAbid/Simvla-Network)
+
 ##Hosted Solution
 We provide a fully hosted solution running on world class cloud hosting and providing a fast and functional alternative. Apply at [https://simvla.com](https://simvla.com)
-
-##Project Cloning
 
 #####Install mysql2 dependencies. 
 See [https://github.com/brianmario/mysql2](https://github.com/brianmario/mysql2)
