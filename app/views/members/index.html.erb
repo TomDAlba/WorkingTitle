@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="twelve columns" style="width: 65%;">
+      <h2><i class="ss-icon" style="font-size: 26px; padding-right: 5px;">map</i> Network Map</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="row">
+  <div class="twelve columns">
+  <% @users.each do |user| %>
+    <h3><i class="ss-icon" style="font-size: 13px; margin-right: 3px">record</i> <%= user.full_name %> &mdash; <%= user.skill %></h3>
+    <%= link_to "Edit Member", edit_member_path(user), :class => "tiny secondary button", :style => "margin-left: 26px; margin-bottom: 15px;" %>
+    <%= link_to "Delete Member", member_path(user), :confirm => 'Are you sure?', :method => :delete, :class => "tiny alert button" %>
+    <%= link_to "Visit Member", root_url(:subdomain => user.subdomain, :port => nil), :target => "_blank", :class => "tiny success button" %>
+    <br />
+  <% end %>
+										
+  </div>
+  </div>

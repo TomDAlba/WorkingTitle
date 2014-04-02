@@ -1,0 +1,33 @@
+<div id="top" class="wrap clearfix four columns ">
+  <div id="main-content" class="container clearfix">
+    <div class="row">
+	    <div class="twelve columns">
+	      <h2>
+	        Simvla cultivates a premier and invite-only network of creative people to share their experiences and create a huge resource of the most diverse topics. We try to deliver the best content from up and coming as well as established creatives and pull it all together in one location, giving them custom tools to streamline their writing experience.
+	      </h2>
+          <% @users.each_with_index do |user, index| %>
+            <div class="panel1" onMouseOver="this.style.background='<%=user.get_color%>'" onMouseOut="this.style.background='#000000'">
+            
+            <%  link = "" %>
+            <% if user.external_link.present? %>
+              <% link = user.external_link %>
+            <% else %>
+              <% link =  root_url(:subdomain => user.subdomain, :port => 80) %>
+            <% end %>
+            <%= link_to link, :target => "_blank" do %>
+            
+              <h3>
+                <span class="noshow">
+                  <%= user.full_name %>
+                </span>
+                <span class="show">
+                  <%= user.skill.upcase %>
+                </span>
+              </h3>
+            <% end %>
+            </div>		           			
+          <% end %>
+      </div>
+    </div>
+    
+    <%= render "layouts/shared/footer"%>

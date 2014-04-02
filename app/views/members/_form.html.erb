@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="twelve columns">
+    <%= f.label :first_name, "Member Name"%>
+    <%= f.text_field :first_name, :class => "pane_input" %>
+
+    <%= f.label :last_name, "Member Surname" %>
+    <%= f.text_field :last_name, :class => "pane_input" %>
+
+    <%= f.label :skill, "Member Profession / Expertise" %>
+    <%= f.text_field :skill, :class => "pane_input" %>
+
+    <%= f.label :email, "Member Email" %>
+    <%= f.text_field :email, :class => "pane_input" %>
+
+    <%= f.label :username, "Member Username" %>
+    <%= f.text_field :username, :class => "pane_input" %>
+
+    <%= f.label :password, "Member Password" %>
+    <%= f.text_field :password, :class => "pane_input" %>
+
+    <%= f.label :password_confirmation, "Member Confirm Password" %>
+    <%= f.text_field :password_confirmation, :class => "pane_input" %>
+
+    <%= f.label :bio, "Member Bio &mdash; Max 200 Car.".html_safe %>
+    <%= f.text_area :bio, :class => "pane_input" %>
+
+    <%= f.label :color, "Member Color" %>
+    <%= f.text_field :color, :class => "pane_input" %>
+
+    <%= f.label :logo, "Logo image".html_safe %>
+    <%= f.text_field :logo, :class => "pane_input" %>
+
+    <%= f.label :typekit, "Typekit Code".html_safe %>
+    <%= f.text_field :typekit, :class => "pane_input" %>
+
+    <%= f.label :analytics, "Analytics Code".html_safe %>
+    <%= f.text_area :analytics, :class => "pane_input" %>
+
+    <%= f.label :external_link, "External link".html_safe %>
+    <%= f.text_field :external_link, :class => "pane_input" %>
+
+    <%= f.label :external_domain, "External Domain".html_safe %>
+    <%= f.text_field :external_domain, :class => "pane_input" %>
+
+    <%= f.label :is_enabled, "Show in Homepage?".html_safe %>
+    <%= f.check_box :is_enabled, :class => "pane_input" %>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="row" style="margin-bottom: 30px;">
+  <div class="twelve columns">
+     <p>
+       <%= f.submit "Save", :class => "nice radius large white button" %>
+      </p>
+  </div>
+</div>
+
+</li>
+</ul>
+</div>

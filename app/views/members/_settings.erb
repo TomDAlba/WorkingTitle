@@ -1,0 +1,78 @@
+ <%= form_for @user, :url => member_path(@user) do |f| %>
+    <%= f.label :skill do %>
+      <i class="icon-certificate" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Profession / Expertise
+    <%end%>
+    <%= f.text_field :skill, :class => "pane_input" %>
+
+    <%= f.label :email do %>
+      <i class="icon-inbox" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Member Email
+    <%end%>
+    <%= f.text_field :email, :class => "pane_input" %>
+
+    <%= f.label :password do %>
+      <i class="icon-lock" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      New Password
+    <%end%>
+    <%= f.text_field :password, :class => "pane_input" %>
+
+    <%= f.label :password_confirmation do %>
+     <i class="icon-lock" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+     Confirm Password
+    <%end%>
+    <%= f.text_field :password_confirmation, :class => "pane_input" %>
+
+    <%= f.label :color do %>
+      <i class="icon-tint" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Your Color –<span style="color: grey; font-size: 14px;"> #Hex Format • No Black</span>
+    <%end%>
+   <%= f.text_field :color, :class => "pane_input" %>
+
+    <%= f.label :logo do  %>
+     <i class="icon-picture" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Logo Icon –
+      <span style="color: grey; font-size: 14px;">
+        Choose an Icon on TheNounProject and place here the URL to a white 200 x 200 Png
+      </span>
+    <%end%>
+    <%= f.text_field :logo, :class => "pane_input", :placeholder=>"http://" %>
+
+    <%= f.label :twitter do %>
+      <i class="icon-twitter" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Twitter Username
+    <%end%>
+    <%= f.text_field :twitter, :class => "pane_input",:placeholder=>"@" %>
+
+
+    <%= f.label :external_link do %>
+      <i class="icon-globe" style="font-size: 17px;color: black;margin-right: 6px;"></i>Website URL
+     <%end%>
+    <%= f.text_field :external_resource, :class => "pane_input",:placeholder=>"http://"  %>
+
+   <%= f.label :bio do %>
+     <i class="icon-bullhorn" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+     About Yourself –
+     <span style="color: grey; font-size: 14px;"> 140 characters allowed</span></label>
+   <%end%>
+   <%= f.text_area :bio, :class => "pane_input"%>
+
+    <%= f.label :analytics do %>
+      <i class="icon-bar-chart" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+      Analytics Code –
+      <span style="color: grey; font-size: 14px;"> Full Code</span></label>
+    <%end%>
+    <%= f.text_area :analytics, :class => "pane_input"%>
+
+    <%= f.label :external_domain do %>
+       <i class="icon-external-link" style="font-size: 17px;color: black;margin-right: 6px;"></i>
+       External Domain –<span style="color: grey; font-size: 14px;">
+       Without http:// (Add an A record to 176.58.112.144 and a Cname to username.simvla.com)</span></label>
+    <%end%>
+    <%= f.text_field :external_domain, :class => "pane_input" %>
+
+
+    <h2 style="background: none;">>
+      <%= f.submit "Save", :class=>"button new-entry", :style=>"background: black; color: white; float: left; margin-left: -20px;"%>
+    </h2>
+<%end%>

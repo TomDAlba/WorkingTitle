@@ -1,0 +1,20 @@
+<article id="<%=post.id%>" class="post">
+<div id="datebar">
+</div>
+        <h2>
+          <%= link_to post.title, post, :style => "border: none; !important;" %>
+        </h2>
+        <div id="postSpecs" style="letter-spacing: 0.1em;">
+            <%= post.world_count %>
+            words &#8226;
+            reading time
+                <%= pluralize post.reading_time, "minute" %>
+        </div>
+        <div id="likes" class="click_like">
+        <a href="#"><i class="icon-thumbs-up" onClick="make_count(jQuery(this)); return false;" style="margin-left: 0px;" data-id="<%=post.id%>"> <%=post.likes.to_i%></i></a>
+    </div>
+        <p>
+          <%=raw post.get_rc %>
+        </p>
+        <h1></h1>
+    </article>
