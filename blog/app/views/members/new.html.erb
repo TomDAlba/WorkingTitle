@@ -1,0 +1,11 @@
+
+<div class="row">
+  <div class="twelve columns" style="width: 65%;">
+    <h2><i class="ss-icon" style="font-size: 23px; margin-right: -35px;">connection</i> ADD a New Member</h2>
+    <p></p>
+  </div>
+</div>
+
+<%= form_for @user, :url => "/members", :method =>:post do |f| %>
+  <%= render "form", :f => f %>
+<% end %>

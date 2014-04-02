@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=@user.full_name%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
+    <meta name="description" content="<%=@user.bio%>"/>
+    <link rel="shortcut icon" href="http://simvla.com/favicon.ico" >
+    <%= stylesheet_link_tag "blog_frontend.css","font-awesome.css"%>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", 'blog'%>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <%=render 'posts/fe/user_color'%>
+    <!-- analytics -->
+    <%=raw @user.analytics%>
+    <!-- typekit -->
+    <%=raw @user.typekit%>
+    <%= csrf_meta_tags %>
+
+</head>
+
+<body id="blog">
+    <header id="sidebar">
+        <%=render 'posts/fe/header'%>
+    </header>
+
+    <section id="river" role="main">
+        <%= yield %>
+    </section>
+</body>
+<style>
+.voted_cl a{ background-color: <%=@user.color%> !important; border-color: <%=@user.color%> !important; color:#fff !important;}
+</style>
+</html>

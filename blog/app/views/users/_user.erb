@@ -1,0 +1,11 @@
+<%= link_to present_link(user), :target => "_blank" do %>
+<div class="post hover" alt="Lauren Proctor" style="background-color:<%=user.get_color%>">
+    <div class="headline">
+        <h2 alt="<%=user.get_color%>"> <%= user.full_name %></h2>
+        <h3> <%= user.skill.upcase %></h3>
+        <aside class="user_icon hand" style="background-color: transparent; border-color: transparent;">
+            <div style="background-color: #FFEE22; background-image: url(https://simvla.com/member_logo/beaker.png);"></div>
+        </aside>
+    </div>
+</div>
+<%end%>
