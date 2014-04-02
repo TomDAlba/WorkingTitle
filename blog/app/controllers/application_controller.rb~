@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   include UrlHelper
-  before_filter :check_domain
+  #before_filter :check_domain
   layout :choose_layout
+
 
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
@@ -54,7 +55,7 @@ class ApplicationController < ActionController::Base
       end
     end
   end
-
+=end
   private
     def choose_layout
       logger.info "\n HOST #{request.host}\n"
@@ -68,5 +69,5 @@ class ApplicationController < ActionController::Base
         'application'
       end
     end
-=end
+
 end

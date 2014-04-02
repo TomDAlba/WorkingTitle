@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   include UrlHelper
-  before_filter :check_domain
+  #before_filter :check_domain
   layout :choose_layout
 
+=begin
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
   end
@@ -17,7 +18,7 @@ class ApplicationController < ActionController::Base
       root_path
     end
   end
-
+=begin
   def check_domain
 
     unless request.host.include?("simvla.com")
@@ -54,7 +55,7 @@ class ApplicationController < ActionController::Base
       end
     end
   end
-
+=end
   private
     def choose_layout
       logger.info "\n HOST #{request.host}\n"

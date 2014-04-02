@@ -26,3 +26,6 @@ end
 gem 'therubyracer', :platforms => :ruby
 gem 'RedCloth', :require => 'redcloth'
 gem 'syntax_highlighter-rails', :path =>"#{File.expand_path(File.dirname(__FILE__))}/vendor/gems/syntax_highlighter-rails"
+gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
+gem 'railroady'
+gem 'paperclip'

@@ -1,4 +1,12 @@
-Simvla::Application.routes.draw do
+Blog::Application.routes.draw do
+
+  mount Ckeditor::Engine => '/ckeditor'
+
+    namespace :mercury do
+      resources :images
+    end
+
+  mount Mercury::Engine => '/'
 
   resources :projects
 
@@ -12,7 +20,7 @@ Simvla::Application.routes.draw do
   resources :messages
   resources :roles
   resources :members
-
+  resources :projects
 
   resources :posts do
     collection do
@@ -28,9 +36,9 @@ Simvla::Application.routes.draw do
   end
 
 
-#  devise_for :users do
-#    resources :posts
-#  end
+  devise_for :users do
+    resources :posts
+  end
 
 #  devise_scope :user do
 #    delete "sign_out", :to => "devise/sessions#destroy"

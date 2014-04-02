@@ -485,3 +485,174 @@
 [04/02/14 10:18:22 -0400 mmathis6453 (1876)] INFO : Installing Rails 3.1/3.2 view instrumentation
 [04/02/14 10:18:22 -0400 mmathis6453 (1876)] INFO : Finished instrumentation
 [04/02/14 10:18:22 -0400 mmathis6453 (1876)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Reading configuration from 
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Enabling the Request Sampler.
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Environment: development
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Dispatcher: webrick
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Application: development
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing Net instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing Unicorn instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing legacy Excon instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing deferred Rack instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Finished instrumentation
+[04/02/14 13:25:08 -0400 mmathis6453 (6067)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 14:08:57 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360c5a9b98>
+[04/02/14 14:08:57 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005aa6130>
+[04/02/14 14:08:57 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005aa6130>
+[04/02/14 14:08:58 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000057ff3a0>
+[04/02/14 14:08:58 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000057ff3a0>
+[04/02/14 14:08:58 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000053d12d8>
+[04/02/14 14:08:58 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000053d12d8>
+[04/02/14 14:09:13 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360c825890>
+[04/02/14 14:09:13 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360c825890>
+[04/02/14 14:09:14 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f36200de2d0>
+[04/02/14 14:09:14 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f36200de2d0>
+[04/02/14 14:09:14 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cc42b08>
+[04/02/14 14:09:14 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cc42b08>
+[04/02/14 14:11:27 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cf00480>
+[04/02/14 14:11:27 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cf00480>
+[04/02/14 14:11:28 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f36202e72c0>
+[04/02/14 14:11:28 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f36202e72c0>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cad0cc0>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360cad0cc0>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360c78b4c0>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x007f360c78b4c0>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005d1ff38>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005d1ff38>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000059d5850>
+[04/02/14 14:11:29 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x000000059d5850>
+[04/02/14 14:11:30 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005732918>
+[04/02/14 14:11:30 -0400 mmathis6453 (6067)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Could not render layout: undefined method `role?' for #<User:0x00000005732918>
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Reading configuration from 
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Enabling the Request Sampler.
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Environment: development
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Dispatcher: webrick
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Application: development
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing Net instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing Unicorn instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing legacy Excon instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing deferred Rack instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 14:11:42 -0400 mmathis6453 (7249)] INFO : Finished instrumentation
+[04/02/14 14:11:43 -0400 mmathis6453 (7249)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 14:13:35 -0400 mmathis6453 (7249)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing partial posts/navigation with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/mike/Desktop/WorkingTitle/blog/app/views"
+  * "/home/mike/.bundler/ruby/2.1.0/mercury-1cc637b0bcce/app/views"
+  * "/usr/lib/ruby/gems/2.1.0/gems/kaminari-0.15.1/app/views"
+  * "/usr/lib/ruby/gems/2.1.0/gems/devise-2.2.8/app/views"
+
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Reading configuration from 
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Enabling the Request Sampler.
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Environment: development
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : No known dispatcher detected.
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Application: development
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing Net instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing Unicorn instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing legacy Excon instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing deferred Rack instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 14:15:24 -0400 mmathis6453 (7398)] INFO : Finished instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Reading configuration from 
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Enabling the Request Sampler.
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Environment: development
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Dispatcher: webrick
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Application: development
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing Net instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing Unicorn instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing legacy Excon instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing deferred Rack instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Finished instrumentation
+[04/02/14 14:31:01 -0400 mmathis6453 (7703)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Reading configuration from 
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Enabling the Request Sampler.
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Environment: development
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Dispatcher: webrick
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Application: development
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing Net instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing Unicorn instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing legacy Excon instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing deferred Rack instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Finished instrumentation
+[04/02/14 14:47:47 -0400 mmathis6453 (8151)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Reading configuration from 
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Enabling the Request Sampler.
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Environment: development
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : No known dispatcher detected.
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Application: development
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing Net instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing Unicorn instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing legacy Excon instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing deferred Rack instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 15:21:26 -0400 mmathis6453 (9029)] INFO : Finished instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Reading configuration from 
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/Desktop/WorkingTitle/blog
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Enabling the Request Sampler.
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Environment: development
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Dispatcher: webrick
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Application: development
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Net instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Unicorn instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing ActiveRecord instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing legacy Excon instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing deferred Rack instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Rails3 Error instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Rails 3 Controller instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Finished instrumentation
+[04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Doing deferred dependency-detection before Rack startup

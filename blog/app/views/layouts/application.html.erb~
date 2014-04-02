@@ -5,7 +5,10 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <html>
-  <link rel="shortcut icon" href="http://simvla.com/favicon.ico" >
+<!-- <link rel="shortcut icon" href="http://simvla.com/favicon.ico" > -->
+<head>
+  <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+</head>
   <%= render "layouts/shared/head"%>
 <body>
   <%= render "layouts/shared/header"%>
