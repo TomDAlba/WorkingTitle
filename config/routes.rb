@@ -1,4 +1,12 @@
-Simvla::Application.routes.draw do
+Blog::Application.routes.draw do
+
+    namespace :mercury do
+      resources :images
+    end
+
+  mount Mercury::Engine => '/'
+
+  resources :projects
 
   get "landing/index"
 
@@ -10,6 +18,7 @@ Simvla::Application.routes.draw do
   resources :messages
   resources :roles
   resources :members
+  resources :projects
 
   resources :posts do
     collection do
@@ -29,13 +38,13 @@ Simvla::Application.routes.draw do
     resources :posts
   end
 
-  devise_scope :user do
-    delete "sign_out", :to => "devise/sessions#destroy"
-  end
+#  devise_scope :user do
+#    delete "sign_out", :to => "devise/sessions#destroy"
+#  end
 
-  constraints(Subdomain) do
-    match '/' => 'posts#show'
-  end
+#  constraints(Subdomain) do
+#    match '/' => 'posts#show'
+#  end
 
   match "beta" => "members#index"
   root :to => 'landing#index'

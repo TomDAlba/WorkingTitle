@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     if resource.role?(:admin)
       dashboard_index_path
     elsif resource.role?(:user)
-      posts_path
+      projects_path
     else
       root_path
     end

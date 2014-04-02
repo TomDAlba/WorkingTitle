@@ -1,0 +1,15 @@
+<!-- <div id="osx-modal-content">
+        <div id="osx-modal-title">Getting Started with Simvla</div>
+        <div class="close"><a href="#" class="simplemodal-close">x</a></div>
+        <div id="osx-modal-data">
+           <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)#Textile_syntax_examples" style="font-size: 25px;"><i class="icon-list-alt" style="font-size: 22px;color: black;margin-right: 16px;"></i>Markup Language</a>
+            <p>Textile is a lightweight markup language originally developed by Dean Allen and billed as a "humane web text generator". Textile converts its marked-up text input to valid, well-formed XHTML and also inserts character entity references for apostrophes, opening and closing single and double quotation marks, ellipses and em dashes.</p>
+            <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/demo/" style="font-size: 25px;"><i class="icon-list-alt" style="font-size: 21px;color: black;margin-right: 16px;"></i>Syntax Highlighter</a>
+            <p>SyntaxHighlighter is a fully functional self-contained code syntax highlighter. To get an idea of what SyntaxHighlighter is capable of, have a look at the <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/demo/">demo page.</a></p>
+            <a href="#" style="font-size: 25px;"><i class="icon-list-alt" style="font-size: 21px;color: black;margin-right: 16px;"></i>Drag & Drop Upload</a>
+            <p>Drop an image into the body of your post where you want it to appear, and it will automatically upload. Easy as that!</a></p>
+            <a href="#" style="font-size: 25px;"><i class="icon-list-alt" style="font-size: 21px;color: black;margin-right: 16px;"></i>Post's External Source</a>
+            <p>Click the External Source button in the editor and place a link to an external source for that post, a link icon will compare next to the post title.</a></p>
+
+        </div>
+ </div>

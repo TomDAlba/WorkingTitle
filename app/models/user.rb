@@ -23,9 +23,9 @@ class User < ActiveRecord::Base
   validates_format_of :username, :with => /^[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true
   validates :subdomain, :presence => true, :length => {:minimum => 4, :maximum => 15}, :uniqueness => true
   validates_format_of :subdomain, :with => /\A[a-z0-9]+\z/
-  validates :skill, :presence => true, :length => {:minimum => 4, :maximum => 40}
-  validates :bio, :presence => true, :length => {:minimum => 4, :maximum => 200}
-  validates :color, :presence => true, :length => {:minimum => 4, :maximum => 10}
+  #validates :skill, :presence => true, :length => {:minimum => 4, :maximum => 40}
+  #validates :bio, :presence => true, :length => {:minimum => 4, :maximum => 200}
+  #validates :color, :presence => true, :length => {:minimum => 4, :maximum => 10}
   #validates_format_of :color, :with => /\A[0-9]+\z/, :message => I18n.t(:only_numbers)
 
   has_and_belongs_to_many :roles
