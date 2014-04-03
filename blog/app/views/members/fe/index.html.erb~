@@ -3,7 +3,7 @@
     <div class="row">
 	    <div class="twelve columns">
 	      <h2>
-	        WriteMeDaily is a web application focused on encouraging ones creative side though writing. We provide a place for people create and share their works with other members of the community, as well as providing things like writing prompts to encourage you when you are feeling uninspired.
+	        WriteMeDaily is a web application focused on encouraging one's creative side through writing. We provide a place for people to create and share their works with other members of the community, personalized writing prompts to encourage you when you are feeling uninspired, and an achievement system to encourage better writing habits!
 	      </h2>
           <% @users.each_with_index do |user, index| %>
             <div class="panel1" onMouseOver="this.style.background='<%=user.get_color%>'" onMouseOut="this.style.background='#000000'">
