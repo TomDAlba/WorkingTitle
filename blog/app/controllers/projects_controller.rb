@@ -1,4 +1,14 @@
 class ProjectsController < ApplicationController
+
+before_filter :custom_user_auth
+
+def custom_user_auth
+    unless user_signed_in?
+        redirect_to new_user_session_path
+    end
+end
+
+
   def index
     @projects = Project.find(:all)
   end

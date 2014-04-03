@@ -20187,3 +20187,2303 @@ Served asset /ckeditor/skins/moono/icons.png - 304 Not Modified (22ms)
 Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:27:26 -0400
 Compiled ckeditor/contents.css  (0ms)  (pid 4570)
 Served asset /ckeditor/contents.css - 304 Not Modified (27ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 13:32:09 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRevsYRvIvTm5D/ZaQ8PqEXCavArU+mPdo8SGEEp+6Y=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:32:09 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:09 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:32:14 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:14 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:32:15 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/shared/_head.html.erb (0.9ms)
+  Rendered layouts/shared/_header.html.erb (0.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:15 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:32:17 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:17 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/_form.html.erb (1.6ms)
+  Rendered projects/edit.html.erb within layouts/application (2.9ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/skins/moono/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/styles.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/styles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:32:18 -0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 13:32:32 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRevsYRvIvTm5D/ZaQ8PqEXCavArU+mPdo8SGEEp+6Y=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:32:32 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:32:32 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:34 -0400
+Served asset /ckeditor/skins/moono/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:34 -0400
+Served asset /ckeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/styles.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:32:34 -0400
+Served asset /ckeditor/styles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:32:34 -0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started GET "/editor/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:35:11 -0400
+Processing by MercuryController#edit as HTML
+  Parameters: {"requested_uri"=>"projects/1/edit"}
+  Rendered text template within layouts/mercury (0.0ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-1.7.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:11 -0400
+Served asset /jquery-1.7.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/mercury.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:11 -0400
+Served asset /mercury.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mercury.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:11 -0400
+Served asset /mercury.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D2LI" for 127.0.0.1 at 2014-04-03 13:35:14 -0400
+Served asset /ckeditor/skins/moono/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:35:14 -0400
+Served asset /ckeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/styles.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:35:14 -0400
+Served asset /ckeditor/styles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:35:14 -0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:16 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRevsYRvIvTm5D/ZaQ8PqEXCavArU+mPdo8SGEEp+6Y=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:16 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/shared/_head.html.erb (1.2ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:16 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:35:18 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/shared/_head.html.erb (1.3ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:18 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:19 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:19 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:35:20 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/shared/_head.html.erb (1.9ms)
+  Rendered layouts/shared/_header.html.erb (0.9ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:20 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-03 13:35:30 -0400
+Processing by Devise::SessionsController#new as HTML
+
+ HOST localhost
+
+  Rendered layouts/shared/_form_error_e.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 12.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:30 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-04-03 13:35:34 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRevsYRvIvTm5D/ZaQ8PqEXCavArU+mPdo8SGEEp+6Y=", "user"=>{"login"=>"fake", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'fake' OR lower(email) = 'fake') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-04-03 17:18:34', `current_sign_in_at` = '2014-04-03 17:35:34', `sign_in_count` = 19, `updated_at` = '2014-04-03 17:35:34' WHERE `users`.`id` = 12
+  [1m[36m (20.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 114ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:35:34 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.3ms)
+  Rendered members/fe/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 39ms (Views: 8.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:35:34 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:35:36 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (5.5ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:36 -0400
+Served asset /backend-home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:36 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/fonts/proximanova-bold.woff" for 127.0.0.1 at 2014-04-03 13:35:36 -0400
+Served asset /fonts/proximanova-bold.woff - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:35:40 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/_form.html.erb (1.8ms)
+  Rendered projects/edit.html.erb within layouts/backend (3.6ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:40 -0400
+Served asset /backend-home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:40 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/fonts/proximanova-regular.woff" for 127.0.0.1 at 2014-04-03 13:35:43 -0400
+Served asset /fonts/proximanova-regular.woff - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:52 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:52 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:52 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:35:53 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/index.html.erb within layouts/backend (6.0ms)
+Completed 200 OK in 20ms (Views: 15.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:53 -0400
+Served asset /backend-home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:53 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:35:54 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/_form.html.erb (1.5ms)
+  Rendered projects/edit.html.erb within layouts/backend (2.9ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:54 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:54 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:57 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1yz8E1w8Z7k1eRdRr3DykYnvNJrW/KKB2YmNxDL1frU=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:35:57 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:57 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:57 -0400
+Served asset /backend-home.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:35:59 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/index.html.erb within layouts/backend (6.2ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:35:59 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:35:59 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:36:00 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:36:00 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:36:00 -0400
+Served asset /backend-home.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:36:02 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:36:02 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:36:02 -0400
+Served asset /backend-home.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2014-04-03 13:36:04 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 2 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.7ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:36:04 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:36:04 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/6" for 127.0.0.1 at 2014-04-03 13:36:05 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 6 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:36:05 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:36:05 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:38:34 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (5.3ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:34 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:34 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:38:35 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/edit.html.erb within layouts/backend (4.9ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:35 -0400
+Served asset /backend-home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:35 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:38:41 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.8ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (8.1ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:41 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:41 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:38:42 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/show.html.erb within layouts/backend (0.7ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:42 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:42 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:38:43 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (6.0ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:43 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:43 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:38:44 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/_form.html.erb (1.5ms)
+  Rendered projects/edit.html.erb within layouts/backend (3.1ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:44 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:44 -0400
+Served asset /backend-home.js - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:38:59 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/_form.html.erb (1.4ms)
+  Rendered projects/edit.html.erb within layouts/backend (3.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:38:59 -0400
+Served asset /backend-home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:38:59 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:39:38 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/_form.html.erb (1.6ms)
+  Rendered projects/edit.html.erb within layouts/backend (4.0ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:39:38 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:39:38 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:39:39 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.6ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:39:39 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:39:39 -0400
+Served asset /backend-home.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:39:40 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/index.html.erb within layouts/backend (5.7ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:39:40 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:39:40 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:39:41 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/_form.html.erb (2.5ms)
+  Rendered projects/edit.html.erb within layouts/backend (5.1ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:39:41 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:39:41 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:41:14 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/shared/_head.html.erb (1.2ms)
+  Rendered layouts/shared/_header.html.erb (0.9ms)
+Completed 200 OK in 17ms (Views: 9.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:14 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-04-03 13:41:15 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:41:15 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:15 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:41:18 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:18 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/shared/_head.html.erb (1.2ms)
+  Rendered layouts/shared/_header.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/skins/moono/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/styles.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/styles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/icons.png" for 127.0.0.1 at 2014-04-03 13:41:19 -0400
+Served asset /ckeditor/skins/moono/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:41:20 -0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 13:41:27 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZYQUJhk32HMrd4JyK9AIcyWuPm5BPR4WTbTFdGeSPG4=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 13:41:27 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:28 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:41:29 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (0.9ms)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:29 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:32 -0400
+Served asset /ckeditor/skins/moono/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:32 -0400
+Served asset /ckeditor/lang/en.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/styles.js?t=D2LI" for 127.0.0.1 at 2014-04-03 13:41:32 -0400
+Served asset /ckeditor/styles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2014-04-03 13:41:32 -0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-03 13:41:35 -0400
+Processing by Devise::SessionsController#new as HTML
+
+ HOST localhost
+
+  Rendered layouts/shared/_form_error_e.html.erb (0.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:35 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-04-03 13:41:39 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZYQUJhk32HMrd4JyK9AIcyWuPm5BPR4WTbTFdGeSPG4=", "user"=>{"login"=>"fake", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'fake' OR lower(email) = 'fake') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-04-03 17:35:34', `current_sign_in_at` = '2014-04-03 17:41:39', `sign_in_count` = 20, `updated_at` = '2014-04-03 17:41:39' WHERE `users`.`id` = 12
+  [1m[36m (78.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 158ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:41:39 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/shared/_head.html.erb (0.9ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:41:39 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:39)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:39)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:48:34 -0400
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:40)
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 7.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:48:34 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (3ms)
+
+
+Started GET "/editor" for 127.0.0.1 at 2014-04-03 13:48:37 -0400
+Processing by MercuryController#edit as HTML
+  Rendered text template within layouts/mercury (0.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mercury.css?body=1" for 127.0.0.1 at 2014-04-03 13:48:37 -0400
+Served asset /mercury.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mercury.js?body=1" for 127.0.0.1 at 2014-04-03 13:48:37 -0400
+Served asset /mercury.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.js?body=1" for 127.0.0.1 at 2014-04-03 13:48:37 -0400
+Served asset /jquery-1.7.js - 304 Not Modified (0ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:40)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:40)
+
+
+Started GET "/ckeditor" for 127.0.0.1 at 2014-04-03 13:49:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/ckeditor"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:42)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:42)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:51:40 -0400
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:42)
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 6.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:51:40 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (4ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:43)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:43)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:45)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:45)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:57:13 -0400
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:45)
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (9278.7ms)
+Completed 500 Internal Server Error in 9314ms
+
+ActionView::Template::Error (undefined local variable or method `projects' for #<#<Class:0x007f2460e73a98>:0x007f2460e729b8>):
+    14: 	  <%= link_to "Sign Out", destroy_user_session_path, :class => "button radius hide-for-small"%>
+    15:         </li>
+    16:         <li>
+    17: 	  <%= link_to "My Projects", projects, :class => "button radius hide-for-small"%>
+    18:         </li>
+    19:       </ul>
+    20:       <%= link_to "WriteMeDaily", root_path, :id => :logo%>
+  app/views/layouts/shared/_header.html.erb:17:in `_app_views_layouts_shared__header_html_erb___752850034411431461_69897172267300'
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1343998095644170922_14556980'
+  app/controllers/landing_controller.rb:10:in `block (2 levels) in index'
+  app/controllers/landing_controller.rb:4:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:57:39 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (9111.8ms)
+Completed 500 Internal Server Error in 9133ms
+
+ActionView::Template::Error (undefined local variable or method `projects' for #<#<Class:0x007f2460e73a98>:0x0000000295d600>):
+    14: 	  <%= link_to "Sign Out", destroy_user_session_path, :class => "button radius hide-for-small"%>
+    15:         </li>
+    16:         <li>
+    17: 	  <%= link_to "My Projects", projects, :class => "button radius hide-for-small"%>
+    18:         </li>
+    19:       </ul>
+    20:       <%= link_to "WriteMeDaily", root_path, :id => :logo%>
+  app/views/layouts/shared/_header.html.erb:17:in `_app_views_layouts_shared__header_html_erb___752850034411431461_69897172267300'
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1343998095644170922_14556980'
+  app/controllers/landing_controller.rb:10:in `block (2 levels) in index'
+  app/controllers/landing_controller.rb:4:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /home/mike/WorkingTitle/blog/config/routes.rb:45)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:58:13 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (11.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (5.0ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.3ms)
+  Rendered members/fe/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/shared/_head.html.erb (53.5ms)
+  Rendered layouts/shared/_header.html.erb (9086.6ms)
+Completed 500 Internal Server Error in 9504ms
+
+ActionView::Template::Error (undefined local variable or method `projects' for #<#<Class:0x007fecd083feb8>:0x007fecd083f0f8>):
+    14: 	  <%= link_to "Sign Out", destroy_user_session_path, :class => "button radius hide-for-small"%>
+    15:         </li>
+    16:         <li>
+    17: 	  <%= link_to "My Projects", projects, :class => "button radius hide-for-small"%>
+    18:         </li>
+    19:       </ul>
+    20:       <%= link_to "WriteMeDaily", root_path, :id => :logo%>
+  app/views/layouts/shared/_header.html.erb:17:in `_app_views_layouts_shared__header_html_erb___1864670785389679130_17043960'
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1951450474298741_70327543704740'
+  app/controllers/landing_controller.rb:10:in `block (2 levels) in index'
+  app/controllers/landing_controller.rb:4:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:58:40 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/shared/_head.html.erb (0.9ms)
+  Rendered layouts/shared/_header.html.erb (1.3ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:58:41 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:58:47 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (10.1ms)
+Completed 200 OK in 151ms (Views: 144.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 13:58:48 -0400
+Served asset /backend-home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 13:58:48 -0400
+Served asset /backend-home.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/fonts/proximanova-bold.woff" for 127.0.0.1 at 2014-04-03 13:58:48 -0400
+Served asset /fonts/proximanova-bold.woff - 304 Not Modified (33ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-03 13:58:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:58:51 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mRole Load (0.6ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/shared/_head.html.erb (1.0ms)
+  Rendered layouts/shared/_header.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:58:51 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-04-03 13:58:54 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36m (13.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 13:58:54 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.1ms)
+  Rendered members/fe/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (1.0ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:58:54 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 13:58:55 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  Rendered projects/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/shared/_head.html.erb (1.3ms)
+  Rendered layouts/shared/_header.html.erb (0.9ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 13:58:55 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 14:17:54 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (70.3ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 88ms (Views: 13.6ms | ActiveRecord: 62.5ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:17:54 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:18:01 -0400
+Processing by ProjectsController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :custom_user_auth rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-03 14:18:01 -0400
+Processing by Devise::SessionsController#new as HTML
+
+ HOST localhost
+
+  Rendered layouts/shared/_form_error_e.html.erb (0.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/shared/_head.html.erb (0.8ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 105ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:18:01 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-04-03 14:18:07 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"shszHHceDOJco0RO29PGmxj0U3Lo+m0W/YQuc6g53bM=", "user"=>{"login"=>"fake", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35mUser Load (119.8ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'fake' OR lower(email) = 'fake') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (31.9ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-04-03 17:41:39', `current_sign_in_at` = '2014-04-03 18:18:07', `sign_in_count` = 21, `updated_at` = '2014-04-03 18:18:07' WHERE `users`.`id` = 12
+  [1m[36m (84.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 362ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 14:18:07 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/shared/_head.html.erb (0.9ms)
+  Rendered layouts/shared/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:18:07 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:18:18 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mRole Load (0.5ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (8.9ms)
+Completed 200 OK in 102ms (Views: 92.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:18 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:18 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fonts/proximanova-bold.woff" for 127.0.0.1 at 2014-04-03 14:18:18 -0400
+Served asset /fonts/proximanova-bold.woff - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 14:18:22 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/show.html.erb within layouts/backend (1.2ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:22 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:22 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:18:23 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (7.0ms)
+Completed 200 OK in 23ms (Views: 16.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:23 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:23 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2014-04-03 14:18:29 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+
+ HOST localhost
+
+  [1m[35mRole Load (0.4ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/edit.html.erb within layouts/backend (25.5ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:29 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:29 -0400
+Served asset /backend-home.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/assets/fonts/proximanova-regular.woff" for 127.0.0.1 at 2014-04-03 14:18:30 -0400
+Served asset /fonts/proximanova-regular.woff - 304 Not Modified (23ms)
+
+
+Started PUT "/projects/1" for 127.0.0.1 at 2014-04-03 14:18:32 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0R2mM6R24mbL0WE+ISV0nRyfdiNtHdovF8X+zid9SL0=", "commit"=>"Update Project", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 14:18:32 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.9ms)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:32 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:32 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:18:33 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+
+ HOST localhost
+
+  [1m[35mRole Load (0.3ms)[0m  SELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1
+  Rendered projects/index.html.erb within layouts/backend (5.6ms)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:33 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:33 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2014-04-03 14:18:35 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+
+ HOST localhost
+
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/show.html.erb within layouts/backend (0.5ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:18:35 -0400
+Served asset /backend-home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:18:35 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 14:18:55 -0400
+Processing by LandingController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (1.1ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:18:55 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:19:02 -0400
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` 
+
+ HOST localhost
+
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT name FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 12 AND `roles`.`name` = 'Admin' LIMIT 1[0m
+  Rendered projects/index.html.erb within layouts/backend (8.5ms)
+Completed 200 OK in 38ms (Views: 20.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/backend-home.css?body=1" for 127.0.0.1 at 2014-04-03 14:19:02 -0400
+Served asset /backend-home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend-home.js" for 127.0.0.1 at 2014-04-03 14:19:02 -0400
+Served asset /backend-home.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/backend-home.js"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.1.0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/fonts/proximanova-bold.woff" for 127.0.0.1 at 2014-04-03 14:19:02 -0400
+Served asset /fonts/proximanova-bold.woff - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2014-04-03 14:19:04 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 14:19:04 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` INNER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` INNER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `users`.`is_enabled` = 1 AND (roles.alias = 'User') ORDER BY created_at desc LIMIT 1000[0m
+  Rendered layouts/shared/_footer.html.erb (0.0ms)
+  Rendered members/fe/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/shared/_head.html.erb (1.1ms)
+  Rendered layouts/shared/_header.html.erb (1.0ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:19:05 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-03 14:19:07 -0400
+Processing by ProjectsController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :custom_user_auth rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-04-03 14:19:07 -0400
+Processing by Devise::SessionsController#new as HTML
+
+ HOST localhost
+
+  Rendered layouts/shared/_form_error_e.html.erb (0.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/shared/_head.html.erb (1.4ms)
+  Rendered layouts/shared/_header.html.erb (1.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-04-03 14:19:07 -0400
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)

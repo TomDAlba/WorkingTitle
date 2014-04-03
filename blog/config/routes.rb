@@ -6,7 +6,7 @@ Blog::Application.routes.draw do
       resources :images
     end
 
-  mount Mercury::Engine => '/'
+
 
   resources :projects
 
@@ -20,6 +20,11 @@ Blog::Application.routes.draw do
   resources :messages
   resources :roles
   resources :members
+
+
+
+  get 'projects', to: 'projets#index', as: 'projects'
+
   resources :projects
 
   resources :posts do
@@ -35,6 +40,7 @@ Blog::Application.routes.draw do
     end
   end
 
+  
 
   devise_for :users do
     resources :posts
@@ -50,4 +56,5 @@ Blog::Application.routes.draw do
 
   match "beta" => "members#index"
   root :to => 'landing#index'
+  mount Mercury::Engine => '/'
 end
