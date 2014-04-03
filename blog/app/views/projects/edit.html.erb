@@ -5,7 +5,5 @@
 <%= link_to 'Show', @project %> |
 <%= link_to 'Back', projects_path %>
 
-<%= text_area :body, "editable text", :class => "tinymce", :rows => 40, :cols => 120 %>
-
-
+<%= tinymce_tag('comment', 'Your text goes here ...') %>
 

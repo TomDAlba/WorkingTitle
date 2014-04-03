@@ -1,6 +1,6 @@
 Blog::Application.routes.draw do
 
-  mount Ckeditor::Engine => '/ckeditor'
+
 
     namespace :mercury do
       resources :images
@@ -46,13 +46,6 @@ Blog::Application.routes.draw do
     resources :posts
   end
 
-#  devise_scope :user do
-#    delete "sign_out", :to => "devise/sessions#destroy"
-#  end
-
-#  constraints(Subdomain) do
-#    match '/' => 'posts#show'
-#  end
 
   match "beta" => "members#index"
   root :to => 'landing#index'
