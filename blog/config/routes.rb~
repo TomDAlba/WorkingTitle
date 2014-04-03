@@ -20,10 +20,12 @@ Blog::Application.routes.draw do
   resources :messages
   resources :roles
   resources :members
-  resources :projects
+
 
 
   get 'projects', to: 'projets#index', as: 'projects'
+
+  resources :projects
 
   resources :posts do
     collection do

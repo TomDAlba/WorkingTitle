@@ -22,7 +22,7 @@ Blog::Application.routes.draw do
   resources :members
 
 
-
+  
   get 'projects', to: 'projets#index', as: 'projects'
 
   resources :projects

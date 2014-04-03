@@ -7,19 +7,9 @@
 <html>
 <!-- <link rel="shortcut icon" href="http://simvla.com/favicon.ico" > -->
 <head>
-  <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+
 </head>
   <%= render "layouts/shared/head"%>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($('textarea').length > 0) {
-        var data = $('textarea');
-        $.each(data, function(i) {
-            CKEDITOR.replace(data[i].id);
-        });
-    }
- });
-</script>
 <body>
   <%= render "layouts/shared/header"%>
 
