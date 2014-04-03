@@ -656,3 +656,239 @@
 [04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Installing Rails 3.1/3.2 view instrumentation
 [04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Finished instrumentation
 [04/02/14 15:32:24 -0400 mmathis6453 (9303)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Reading configuration from 
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Enabling the Request Sampler.
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Environment: development
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Dispatcher: webrick
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Application: development
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing Net instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Finished instrumentation
+[04/03/14 12:09:03 -0400 mmathis6453 (2768)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Reading configuration from 
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Enabling the Request Sampler.
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Environment: development
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : No known dispatcher detected.
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Application: development
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing Net instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:16:38 -0400 mmathis6453 (2975)] INFO : Finished instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Reading configuration from 
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Enabling the Request Sampler.
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Environment: development
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : No known dispatcher detected.
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Application: development
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing Net instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:16:40 -0400 mmathis6453 (2985)] INFO : Finished instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Reading configuration from 
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Enabling the Request Sampler.
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Environment: development
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : No known dispatcher detected.
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Application: development
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing Net instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:16:42 -0400 mmathis6453 (2995)] INFO : Finished instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Reading configuration from 
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Enabling the Request Sampler.
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Environment: development
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : No known dispatcher detected.
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Application: development
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing Net instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:16:44 -0400 mmathis6453 (3005)] INFO : Finished instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Reading configuration from 
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Enabling the Request Sampler.
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Environment: development
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Dispatcher: webrick
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Application: development
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing Net instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing Unicorn instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing legacy Excon instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing deferred Rack instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Finished instrumentation
+[04/03/14 12:45:45 -0400 mmathis6453 (3400)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Reading configuration from 
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Enabling the Request Sampler.
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Environment: development
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Dispatcher: webrick
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Application: development
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing Net instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Finished instrumentation
+[04/03/14 13:07:57 -0400 mmathis6453 (4050)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Reading configuration from 
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Enabling the Request Sampler.
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Environment: development
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Dispatcher: webrick
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Application: development
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing Net instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Finished instrumentation
+[04/03/14 13:09:29 -0400 mmathis6453 (4109)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Reading configuration from 
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Enabling the Request Sampler.
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Environment: development
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Dispatcher: webrick
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Application: development
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing Net instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Finished instrumentation
+[04/03/14 13:20:27 -0400 mmathis6453 (4369)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Reading configuration from 
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Enabling the Request Sampler.
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Environment: development
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Dispatcher: webrick
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Application: development
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing Net instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Finished instrumentation
+[04/03/14 13:25:25 -0400 mmathis6453 (4514)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Reading configuration from 
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Enabling the Request Sampler.
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Environment: development
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Dispatcher: webrick
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Application: development
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing Net instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Finished instrumentation
+[04/03/14 13:26:45 -0400 mmathis6453 (4547)] INFO : Doing deferred dependency-detection before Rack startup
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Starting the New Relic agent in "development" environment.
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Reading configuration from 
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /home/mike/WorkingTitle/blog
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Enabling the Request Sampler.
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Environment: development
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Dispatcher: webrick
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Application: development
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing Net instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing Unicorn instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing ActiveRecord instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing legacy Excon instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing deferred Rack instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing Rails3 Error instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing Rails 3 Controller instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Finished instrumentation
+[04/03/14 13:27:17 -0400 mmathis6453 (4570)] INFO : Doing deferred dependency-detection before Rack startup

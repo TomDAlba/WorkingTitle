@@ -31,3 +31,4 @@ gem 'railroady'
 gem 'paperclip'
 
 gem 'ckeditor', '4.0.4'
+gem 'tinymce-rails'

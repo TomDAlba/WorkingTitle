@@ -4,3 +4,8 @@
 
 <%= link_to 'Show', @project %> |
 <%= link_to 'Back', projects_path %>
+
+<%= text_area_tag :content, "", :class => "tinymce", :rows => 40, :cols => 120 %>
+
+<%= tinymce %>
+
