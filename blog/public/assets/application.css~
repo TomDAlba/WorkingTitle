@@ -84,6 +84,44 @@
 .ss-facebook:before{content:''}.ss-twitter:before{content:''}.ss-linkedin:before{content:''}.ss-googleplus:before{content:''}.ss-tumblr:before{content:''}.ss-wordpress:before{content:''}.ss-blogger:before{content:''}.ss-posterous:before{content:''}.ss-youtube:before{content:''}.ss-vimeo:before{content:''}.ss-flickr:before{content:''}.ss-instagram:before{content:''}.ss-pinterest:before{content:''}.ss-dribbble:before{content:''}.ss-behance:before{content:''}.ss-github:before{content:''}.ss-paypal:before{content:''}.ss-foursquare:before{content:''}.ss-skype:before{content:''}.ss-mail:before{content:'✉'}
 
 
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2012 Oak Studios LLC
+* 
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-standard.css" rel="stylesheet" />
+*/
+
+@font-face {
+	font-family: "SSStandard";
+	src: url('ss-standard.eot');
+	src: url('ss-standard.eot?#iefix') format('embedded-opentype'), 
+	     url('ss-standard.woff') format('woff'), 
+	     url('ss-standard.ttf')  format('truetype'),
+	     url('ss-standard.svg#SSStandard') format('svg');
+	font-weight: normal;
+  font-style: normal;
+}
+
+.ss-icon, [class^="ss-"]:before, [class*=" ss-"]:before, 
+.ss-icon.ss-standard, [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before {
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+
 
 /* Table of Content
 ==================================================
@@ -100,6 +138,44 @@
 	#Misc */
 
 
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	body, input {
+		background: white;
+		font: 14px/21px;
+		font-family: helvetica-neue,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+		color: #5d5450;
+		-webkit-text-size-adjust: 100%;
+		}
 
 
 /* #Links
@@ -115,6 +191,22 @@
 .fb-facepile a{color: red !important; background-color: red !important;}
 
 
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 0px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li {margin-bottom: 5px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
 
 /* #Images
 ================================================== */
@@ -124,8 +216,183 @@
 		height: auto; }
 
 
+/* #Buttons
+================================================== */
 
 
+
+
+
+	a.button, input[type="submit"],
+	input[type="reset"],
+	input[type="button"] 
+	{background-color:#000; padding: 5px 10px 5px 10px; text-decoration: none; 
+	border: none;	  cursor: pointer; color: #fff;
+	
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		
+	}
+
+
+
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {background-color: lightSlateGray; color:white;
+	}
+		
+		
+		
+		
+			.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {background-color: lightSlateGray;
+		}
+		
+		
+		
+		
+	.button.full-width,
+	button.full-width,
+
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+
+
+/* #Tabs (activate in tabs.js)
+================================================== */
+	ul.tabs {
+		display: block;
+		margin: 0 0 20px 0;
+		padding: 0;
+		border-bottom: solid 1px #ddd; }
+	ul.tabs li {
+		display: block;
+		width: auto;
+		height: 30px;
+		padding: 0;
+		float: left;
+		margin-bottom: 0; }
+	ul.tabs li a {
+		display: block;
+		text-decoration: none;
+		width: auto;
+		height: 29px;
+		padding: 0px 20px;
+		line-height: 30px;
+		border: solid 1px #ddd;
+		border-width: 1px 1px 0 0;
+		margin: 0;
+		background: #f5f5f5;
+		font-size: 13px; }
+	ul.tabs li a.active {
+		background: #fff;
+		height: 30px;
+		position: relative;
+		top: -4px;
+		padding-top: 4px;
+		border-left-width: 1px;
+		margin: 0 0 0 -1px;
+		color: #111;
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px;
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+	ul.tabs li:first-child a.active {
+		margin-left: 0; }
+	ul.tabs li:first-child a {
+		border-width: 1px 1px 0 1px;
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px; }
+	ul.tabs li:last-child a {
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+
+	ul.tabs-content { margin: 0; display: block; }
+	ul.tabs-content > li { display:none; }
+	ul.tabs-content > li.active { display: block; }
+
+	/* Clearfixing tabs for beautiful stacking */
+	ul.tabs:before,
+	ul.tabs:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	ul.tabs:after {
+	  clear: both; }
+	ul.tabs {
+	  zoom: 1; }
+
+
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 0px; }
+	fieldset {
+		margin-bottom: 20px; /*margin-left: 15px;*/ }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+	
+}
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label, legend {
+	display: block;
+	font-weight: 800;
+	font-size: 25px;
+	text-align: left;
+	font-family: proxima-nova,sans-serif;
+	text-transform: uppercase;
+	}
+	
+		select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
 
 /* #Misc
 ================================================== */
@@ -3512,6 +3779,517 @@ ul.button-group {
   overflow: hidden;
 }
 
+/* line 146, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2754, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group li {
+  padding: 0;
+  margin: 0 0 0 -1px;
+  float: left;
+}
+
+/* line 147, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2760, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group li:first-child {
+  margin-left: 0;
+}
+
+/* line 151, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2764, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.radius li:first-child a.button, ul.button-group.radius li:first-child a.button.radius, ul.button-group.radius li:first-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 152, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2774, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.radius li + li a.button, ul.button-group.radius li + li a.button.radius, ul.button-group.radius li + li a.button.rounded {
+  border-radius: 0;
+}
+
+/* line 153, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2778, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.radius li:last-child a.button, ul.button-group.radius li:last-child a.button.radius, ul.button-group.radius li:last-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 157, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2788, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.rounded li:first-child a.button, ul.button-group.rounded li:first-child a.button.radius, ul.button-group.rounded li:first-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+
+/* line 158, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2798, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.rounded li + li a.button, ul.button-group.rounded li + li a.button.radius, ul.button-group.rounded li + li a.button.rounded {
+  border-radius: 0;
+}
+
+/* line 159, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2802, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.rounded li:last-child a.button, ul.button-group.rounded li:last-child a.button.radius, ul.button-group.rounded li:last-child a.button.rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+}
+
+/* line 163, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2812, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even a.button {
+  width: 100%;
+}
+
+/* line 164, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2816, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even.two-up li {
+  width: 50%;
+}
+
+/* line 165, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2820, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even.three-up li {
+  width: 33.3%;
+}
+
+/* line 166, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2824, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even.three-up li:first-child {
+  width: 33.4%;
+}
+
+/* line 167, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2828, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even.four-up li {
+  width: 25%;
+}
+
+/* line 168, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2832, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.button-group.even.five-up li {
+  width: 20%;
+}
+
+/* line 172, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2837, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+div.button-bar {
+  overflow: hidden;
+}
+
+/* line 173, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2841, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+div.button-bar ul.button-group {
+  float: left;
+  margin-right: 8px;
+}
+
+/* line 174, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
+/* line 2846, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+div.button-bar ul.button-group:last-child {
+  margin-left: 0;
+}
+
+/* Requires
+   globals.css
+   app.js */
+/* Tabs ---------------------- */
+/* line 9, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2855, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs {
+  border-bottom: solid 1px #e6e6e6;
+  display: block;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* line 10, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2863, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.contained {
+  margin-bottom: 0;
+}
+
+/* line 12, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2867, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dt {
+  color: #b3b3b3;
+  cursor: default;
+  display: block;
+  float: left;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 9px 0 20px;
+  width: auto;
+  text-transform: uppercase;
+}
+
+/* line 13, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2880, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dt:first-child {
+  padding: 0 9px 0 0;
+}
+
+/* line 16, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2884, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dd {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 17, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2891, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dd a {
+  color: #6f6f6f;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 23.8px;
+}
+
+/* line 18, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2900, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dd.active {
+  border-top: 3px solid #2ba6cb;
+  margin-top: -3px;
+}
+
+/* line 19, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2905, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dd.active a {
+  cursor: default;
+  color: #3c3c3c;
+  background: #fff;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  font-weight: bold;
+}
+
+/* line 21, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2914, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs dd:first-child {
+  margin-left: 0;
+}
+
+/* line 24, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2918, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical {
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 25, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2923, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dt, dl.tabs.vertical dd {
+  float: none;
+  height: auto;
+}
+
+/* line 27, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2928, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dd {
+  border-left: 3px solid #cccccc;
+}
+
+/* line 28, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2932, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dd a {
+  background: #f2f2f2;
+  border: none;
+  border: 1px solid #e6e6e6;
+  border-width: 1px 1px 0 0;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: auto;
+  line-height: 1;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+/* line 30, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2948, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dd.active {
+  margin-top: 0;
+  border-top: 1px solid #4d4d4d;
+  border-left: 4px solid #1a1a1a;
+}
+
+/* line 31, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2954, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dd.active a {
+  background: #4d4d4d;
+  border: none;
+  color: #fff;
+  height: auto;
+  margin: 0;
+  position: static;
+  top: 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+/* line 33, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2967, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.vertical dd:first-child a.active {
+  margin: 0;
+}
+
+/* line 37, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2971, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+/* line 38, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2976, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill dd {
+  margin-right: 10px;
+}
+
+/* line 39, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2980, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill dd:last-child {
+  margin-right: 0;
+}
+
+/* line 40, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2984, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill dd a {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  background: #e6e6e6;
+  height: 26px;
+  line-height: 26px;
+  color: #666;
+}
+
+/* line 42, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 2996, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill dd.active {
+  border: none;
+  margin-top: 0;
+}
+
+/* line 43, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3001, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill dd.active a {
+  background-color: #2ba6cb;
+  border: none;
+  color: #fff;
+}
+
+/* line 46, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3007, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.pill.contained {
+  border-bottom: solid 1px #eee;
+  margin-bottom: 0;
+}
+
+/* line 50, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3012, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.two-up dt a, dl.tabs.two-up dd a, dl.tabs.three-up dt a, dl.tabs.three-up dd a, dl.tabs.four-up dt a, dl.tabs.four-up dd a, dl.tabs.five-up dt a, dl.tabs.five-up dd a {
+  padding: 0 17px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 52, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3018, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.two-up dt, dl.tabs.two-up dd {
+  width: 50%;
+}
+
+/* line 53, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3022, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.three-up dt, dl.tabs.three-up dd {
+  width: 33.33%;
+}
+
+/* line 54, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3026, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.four-up dt, dl.tabs.four-up dd {
+  width: 25%;
+}
+
+/* line 55, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3030, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+dl.tabs.five-up dt, dl.tabs.five-up dd {
+  width: 20%;
+}
+
+/* line 58, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3035, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content {
+  display: block;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+/* line 59, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3041, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content > li {
+  display: none;
+}
+
+/* line 60, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3045, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content > li.active {
+  display: block;
+}
+
+/* line 62, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3049, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content.contained {
+  padding: 0;
+}
+
+/* line 63, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3053, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content.contained > li {
+  border: solid 0 #e6e6e6;
+  border-width: 0 1px 1px 1px;
+  padding: 20px;
+}
+
+/* line 64, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3059, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+ul.tabs-content.contained.vertical > li {
+  border-width: 1px 1px 1px 1px;
+}
+
+/* line 68, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+/* line 3064, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.no-js ul.tabs-content > li {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 71, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3070, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.tabs.mobile, dl.nice.tabs.mobile {
+    width: auto;
+    margin: 20px -20px 40px;
+    height: auto;
+  }
+
+  /* line 72, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3077, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.tabs.mobile dt, dl.tabs.mobile dd, dl.nice.tabs.mobile dt, dl.nice.tabs.mobile dd {
+    float: none;
+    height: auto;
+  }
+
+  /* line 74, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3083, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.tabs.mobile dd a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 18px 20px;
+    line-height: 1;
+    border: solid 0 #ccc;
+    border-width: 1px 0 0;
+    margin: 0;
+    color: #555;
+    background: #eee;
+    font-size: 15px;
+    font-size: 1.5 rem;
+  }
+
+  /* line 75, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3099, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.tabs.mobile dd a.active {
+    height: auto;
+    margin: 0;
+    border-width: 1px 0 0;
+  }
+
+  /* line 78, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3106, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  .tabs.mobile {
+    border-bottom: solid 1px #ccc;
+    height: auto;
+  }
+
+  /* line 80, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3111, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  .tabs.mobile dd a {
+    padding: 18px 20px;
+    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    background: #fff;
+  }
+
+  /* line 81, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3120, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  .tabs.mobile dd a.active {
+    border: none;
+    background: #2ba6cb;
+    color: #fff;
+    margin: 0;
+    position: static;
+    top: 0;
+    height: auto;
+  }
+
+  /* line 82, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3130, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  .tabs.mobile dd:first-child a.active {
+    margin: 0;
+  }
+
+  /* line 85, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3135, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.contained.mobile, dl.nice.contained.mobile {
+    margin-bottom: 0;
+  }
+
+  /* line 86, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3140, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.contained.tabs.mobile dd a {
+    padding: 18px 20px;
+  }
+
+  /* line 88, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/tabs.scss */
+  /* line 3145, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  dl.tabs.mobile + ul.contained {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-width: 0 0 1px 0;
+  }
+}
 /* Requires
    globals.css */
 /* line 6, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/navbar.scss */
@@ -4429,6 +5207,190 @@ form.custom div.custom.dropdown.expand {
   width: 100% !important;
 }
 
+/* line 99, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3899, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown.open.small ul {
+  width: 134px !important;
+}
+
+/* line 100, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3903, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown.open.medium ul {
+  width: 254px !important;
+}
+
+/* line 101, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3907, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown.open.large ul {
+  width: 434px !important;
+}
+
+/* line 102, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3911, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown.open.expand ul {
+  width: 100% !important;
+}
+
+/* line 105, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3915, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  margin: 0;
+  left: 0;
+  top: 27px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  border: solid 1px #cccccc;
+}
+
+/* line 107, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3929, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li {
+  color: #555;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 3px 38px 3px 6px;
+  min-height: 18px;
+  line-height: 18px;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+
+/* line 108, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3941, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li.selected {
+  background: #cdebf5;
+  color: #000;
+}
+
+/* line 109, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3946, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li.selected:after {
+  content: "\2013";
+  position: absolute;
+  right: 10px;
+}
+
+/* line 111, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3952, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li:hover {
+  background-color: #e3f4f9;
+  color: #222;
+}
+
+/* line 112, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3957, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li:hover:after {
+  content: "\2013";
+  position: absolute;
+  right: 10px;
+  color: #8ed3e7;
+}
+
+/* line 114, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3964, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li.selected:hover {
+  background: #cdebf5;
+  cursor: default;
+  color: #000;
+}
+
+/* line 115, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3970, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul li.selected:hover:after {
+  color: #000;
+}
+
+/* line 117, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3974, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom div.custom.dropdown ul.show {
+  display: block;
+}
+
+/* line 121, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3978, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+form.custom .custom.disabled {
+  background-color: #ddd;
+}
+
+/* Correct FF custom dropdown height */
+@-moz-document url-prefix() {
+  /* line 126, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+  /* line 3985, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+  form.custom div.custom.dropdown a.selector {
+    height: 30px;
+  }
+}
+
+/* line 128, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
+/* line 3991, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie9 form.custom div.custom.dropdown a.selector {
+  height: 30px;
+}
+
+/* This is for all IE specfific style less than IE9. We hate IE. */
+/* line 5, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 3997, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 .row {
+  max-width: 1000px;
+}
+
+/* line 7, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4002, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+div.panel {
+  border: 0px solid #ccc;
+}
+
+/* line 8, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4007, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 .nav-bar li.has-flyout a {
+  padding-right: 20px;
+}
+
+/* line 9, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4012, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 .nav-bar li.has-flyout a:after {
+  border-top: none;
+}
+
+/* Correct IE7 button padding */
+/* line 12, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4018, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 input[type=submit].nice.button {
+  filter: chroma(color=black);
+  position: relative;
+  top: -2px;
+}
+
+/* line 13, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4025, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 input[type=submit].tiny.button {
+  padding: 5px 5px 7px;
+}
+
+/* line 14, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4030, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 input[type=submit].small.button {
+  padding: 8px 7px 9px;
+}
+
+/* line 15, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4035, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 input[type=submit].medium.button {
+  padding: 9px 13px 9px;
+}
+
+/* line 16, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
+/* line 4040, ../../../app/assets/stylesheets/fe/foundation.css.scss */
+.lt-ie8 input[type=submit].large.button {
+  padding: 9px 18px 10px;
+}
+
 /* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
@@ -4519,6 +5481,11 @@ width: 940px;
 /* Introduction */
 
 
+
+
+
+
+
 #intro-wrap {
 position: relative;
 height: 140px;
@@ -4533,12 +5500,7 @@ z-index: 0;
 background-size: cover;
 }
 	
-	#intro {		position:fixed; top:30%; 
-					width: 100%;
-					left: 0;
-					right: 0; 
-					height: 460px;
-					z-index: -10; } 
+	
 	
 			
 	.intro-content{	width: 530px;
@@ -4654,3 +5616,96 @@ padding-right: 48px;
 	.banner-wrap{background-image:url(../images/jolby.png); background-repeat: repeat-x; height: 475px; background-color: #fff; }
 
 
+/* main ----------------------------------------------------------------- */
+
+	#featured-photos.bottom-margin{margin-bottom: 20px;}
+	#next{background-color: #fff;}
+	#next-content-padding{padding: 1em 1em 0em 1em;}
+	#last-content a{padding:2px 22px 2px 4px; background-color: #ff7;		
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px; }
+			
+	
+	.arrow{background: url(../images/arrow.png) no-repeat center;
+	margin-bottom: 40px;
+	background-position: 215px;}
+	#organizers img{margin-bottom: 10px;}
+	
+	#collab{clear: both;}
+
+
+
+
+
+
+/* subfooter ----------------------------------------------------------------- */
+	#sub-footer.wrap	{background-color: #fff; 
+						padding: 40px 0px 40px 0px; 
+						z-index: 1000;
+						color: #4b4440; }
+						
+	#sub-footer h1, #sub-footer h3,#sub-footer .line { color: #ee4900; }
+	#sub-footer #twitter p { text-indent: 20px; background-image:url(../images/icon-twitter.png); background-repeat: no-repeat; background-position-y: 3px }
+	#sub-footer p.spam{clear: both;}
+		#sub-footer h1, #sub-footer h3{text-align: center;}	
+	#facebook-small, #twitter li{margin-bottom: 20px;}
+
+
+
+/* footer ----------------------------------------------------------------- */
+.footer{padding: 10px 0px 20px 0px; border-top:double 4px;  }
+
+#footer.wrap{background-color: #14b694;padding: 20px 20px 0px 20px;
+ z-index: 40; position: relative;	}
+#footer p{color: #fff; margin-bottom: 5px;}
+#footer a{color: #fff; border-bottom: solid thin #fff;}
+#footer a:hover{color: #fff; border-bottom: none;}
+
+
+
+
+#footer .container{background: #14b694;  height: 140px;}
+
+    @media only screen and (max-width: 750px) {
+
+
+        .logo{position: relative; left:-10px; top: 33px;
+width: 300px;}
+        .header-wrap{padding: 0px 0px 0px 0px;}
+        .header .alpha{position: relative; top: 20px;}
+
+}
+
+.soon{color: #A31B1E; font-style: italic;
+}
+
+
+
+
+.top-button{position: fixed; right: 0px; top:-4px;display: none; margin: 0px 40px 0px 0px; display: none;}
+.top-button a{
+				border: none !important;
+				background-color: #14b694;
+				-moz-border-radius: 2px;
+				-webkit-border-radius: 2px;
+				border-radius: 2px;
+				padding: 9px 10px 5px 10px; 
+				display: block; }
+		
+.top-button a:hover{color: #fff;background-color: #a37fb8;}
+.top-button a:active{color: #fff;background-color: #a37fb8;}
+
+
+.top-button.on{
+display: block ;	
+}
+
+#error_explanation{
+width: 885px;
+margin: 14px auto auto auto;
+font-size: 38px;
+font-family: "proxima-nova", sans-serif;
+font-weight: 800;
+color: black;
+}

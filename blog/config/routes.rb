@@ -3,13 +3,15 @@ Blog::Application.routes.draw do
   resources :prompts
 
   get "profiles/show"
-
+  get 'projects/by_prompt', :to => 'projects#by_prompt', :as => 'by_prompt'
 
   resources :projects do
     member { post :mercury_update }
   end
   post 'projects/:id' => 'projects#update'
   post 'projects/new' => 'projects#create'
+
+
 
   
   get "domains/index"

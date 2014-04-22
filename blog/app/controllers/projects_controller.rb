@@ -2,6 +2,12 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.find(:all)
   end
+
+  def by_prompt
+    @prompt = Prompt.find(params[:prompt])
+    logger.debug Project.exists?(prompt_id: 7)
+    @projects = Project.find(:all, :conditions => { :prompt_id => @prompt.id})
+  end
   
   def show
     @project = Project.find(params[:id])
