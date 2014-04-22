@@ -5,9 +5,10 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <html>
-<!-- <link rel="shortcut icon" href="http://simvla.com/favicon.ico" > -->
 <head>
-    <%= init_tinymce_hammer_if_required %>
+<%= javascript_include_tag 'application' %>
+<%= csrf_meta_tag %>
+  <%= javascript_include_tag "application" %>
 </head>
   <%= render "layouts/shared/head"%>
 <body>

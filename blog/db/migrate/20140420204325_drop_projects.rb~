@@ -1,0 +1,4 @@
+class DropProjects < ActiveRecord::Migration
+  def change
+  end
+end

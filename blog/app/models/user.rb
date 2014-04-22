@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
   validates_format_of :first_name, :with => /\A[a-zA-Z ']+\z/, :message => I18n.t(:only_letters)
   validates :username, :presence => true, :length => {:minimum => 4, :maximum => 20}, :uniqueness => true
   validate :username_not_only_number, :allow_blank => true
-  validates_format_of :username, :with => /^[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true
+  validates_format_of :username, :with => /\A[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true
   validates :subdomain, :presence => true, :length => {:minimum => 4, :maximum => 15}, :uniqueness => true
   validates_format_of :subdomain, :with => /\A[a-z0-9]+\z/
   #validates :skill, :presence => true, :length => {:minimum => 4, :maximum => 40}
@@ -29,7 +29,8 @@ class User < ActiveRecord::Base
   #validates_format_of :color, :with => /\A[0-9]+\z/, :message => I18n.t(:only_numbers)
 
   has_and_belongs_to_many :roles
-  has_many :posts, :dependent => :destroy
+  has_one :profile
+  has_many :projects
 
   scope :author, joins(:roles).where('roles.alias = ?', "User")
   scope :author_enabled, lambda{|limit|
@@ -40,7 +41,7 @@ class User < ActiveRecord::Base
   }
 
   def username_not_only_number
-    reg=/^[0-9]+$/
+    reg=/\A[0-9]+\z/
     if reg.match(username)
       errors.add(:username, I18n.t(:can_not_only_numbers))
     end

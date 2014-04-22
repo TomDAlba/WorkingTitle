@@ -1,4 +1,11 @@
-<h1>Listing projects</h1>
+
+  <%= render "layouts/shared/head"%>
+<body>
+  <%= render "layouts/shared/header"%>
+
+  <%= yield %>
+
+</body>
 
 <table>
   <tr>
@@ -9,9 +16,10 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to project.title, project %></td>
+    <td><%= button_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+
+
   </tr>
 <% end %>
 </table>
