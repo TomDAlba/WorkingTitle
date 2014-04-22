@@ -1,8 +1,10 @@
 Blog::Application.routes.draw do
   
+  resources :prompts
+
   get "profiles/show"
 
-  get "page/show"
+
   resources :projects do
     member { post :mercury_update }
   end

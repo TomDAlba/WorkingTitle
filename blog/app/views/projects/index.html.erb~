@@ -16,7 +16,7 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to project.title, project %></td>
     <td><%= button_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
 
 
@@ -26,4 +26,4 @@
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'New Project', prompts_path %>

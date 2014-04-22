@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(params[:project])
     @project.title = "Title"
     @project.body = "Enter your text here!"
-    @project.prompt_id = 0
+    @project.prompt_id = 1
     if @project.save
       flash[:notice] = "Successfully created project."
       redirect_to @project
@@ -45,6 +45,7 @@ class ProjectsController < ApplicationController
     @project_old.destroy
 
     project.title = params[:content][:title][:value]
+    project.body = params[:content][:body][:value]
     project.id = @old_id
     project.created_at = @created
     project.prompt_id = @prompt

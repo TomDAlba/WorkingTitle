@@ -22,8 +22,8 @@
     <% @prompts.each do |prompt| %>
       <tr>
         <td><%= link_to prompt.title, prompt %></td>
-        <td><%= link_to 'Use This Prompt', :controller => "projects", :action => "create", :prompt => prompt %></td>
-        <td><%= button_to 'Destroy', prompt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Use This Prompt', projects_path( :prompt => prompt) %></td>
+
       </tr>
     <% end %>
   </tbody>

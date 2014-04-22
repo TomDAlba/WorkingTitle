@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(params[:project])
     @project.title = "Title"
     @project.body = "Enter your text here!"
-    @project.prompt_id = 0
+    @project.prompt_id = params[:prompt]
     if @project.save
       flash[:notice] = "Successfully created project."
       redirect_to @project

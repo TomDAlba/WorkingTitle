@@ -22,7 +22,7 @@
     <% @prompts.each do |prompt| %>
       <tr>
         <td><%= link_to prompt.title, prompt %></td>
-        <td><%= link_to 'Use This Prompt', :controller => "projects", :action => "create", :prompt => prompt %></td>
+        <td id="tmp"><%= button_to 'Use This Prompt', projects_path( :prompt => prompt) %></td>
 
       </tr>
     <% end %>

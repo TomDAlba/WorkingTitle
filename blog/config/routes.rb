@@ -9,6 +9,7 @@ Blog::Application.routes.draw do
     member { post :mercury_update }
   end
   post 'projects/:id' => 'projects#update'
+  post 'projects/new' => 'projects#create'
 
   
   get "domains/index"

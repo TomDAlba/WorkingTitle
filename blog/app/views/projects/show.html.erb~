@@ -14,7 +14,7 @@
 </body>
 
 
-<table width="600" style="display: inline-block;">
+<table width="600" style="float: left;">
 <tr>
 <td><div id="title" data-mercury="full"><%= raw @project.title %></divn></td>
 </tr>
@@ -24,7 +24,7 @@
 </table>
 
 
-<table width="600" style="display: inline-block;">
+<table width="600" style="float: right;">
 <tr>
 <td><p><%= raw @prompt.title %></p></divn></td>
 </tr>
