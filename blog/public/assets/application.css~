@@ -3064,7 +3064,7 @@ p.vevent abbr {
 /* line 8, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
 /* line 2198, ../../../app/assets/stylesheets/fe/foundation.css.scss */
 .button {
-  width: 100%;
+
   background: #EEE;
   border: none;
   color: black;
@@ -4675,58 +4675,7 @@ ul.flyout li a:hover, .nav-bar li ul li a:hover {
     margin-bottom: 18px;
   }
 }
-/* Requires
-   globals.css */
-/* Standard Forms ---------------------- */
-/* line 8, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3466, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-form {
-  margin: 0 0 19.416px;
-}
 
-/* line 10, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3471, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.row form .row {
-  margin: 0 -6px;
-}
-
-/* line 12, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3475, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.row form .row .column, .row form .row .columns {
-  padding: 0 6px;
-}
-
-/* line 14, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3479, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.row form .row.collapse {
-  margin: 0;
-}
-
-/* line 15, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3483, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.row form .row.collapse .column, .row form .row.collapse .columns {
-  padding: 0;
-}
-
-/* line 19, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3488, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-label {
-  margin-top: 15px;
-  color: black;
-  font-size: 20px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  font-weight: 800;
-  font-family: proxima-nova, sans-serif;
-}
-
-/* line 21, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
-/* line 3498, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-label.right {
-  float: none;
-  text-align: right;
-  padding-top: 6px;
-}
 
 @media only screen and (max-width: 767px) {
   /* line 25, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/forms.scss */
@@ -5341,39 +5290,6 @@ div.panel {
   border-top: none;
 }
 
-/* Correct IE7 button padding */
-/* line 12, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
-/* line 4018, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.lt-ie8 input[type=submit].nice.button {
-  filter: chroma(color=black);
-  position: relative;
-  top: -2px;
-}
-
-/* line 13, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
-/* line 4025, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.lt-ie8 input[type=submit].tiny.button {
-  padding: 5px 5px 7px;
-}
-
-/* line 14, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
-/* line 4030, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.lt-ie8 input[type=submit].small.button {
-  padding: 8px 7px 9px;
-}
-
-/* line 15, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
-/* line 4035, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.lt-ie8 input[type=submit].medium.button {
-  padding: 9px 13px 9px;
-}
-
-/* line 16, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/ie.scss */
-/* line 4040, ../../../app/assets/stylesheets/fe/foundation.css.scss */
-.lt-ie8 input[type=submit].large.button {
-  padding: 9px 18px 10px;
-}
-
 /* --------------------------------------------------
    Table of Contents
 -----------------------------------------------------
@@ -5692,3 +5608,9 @@ font-family: "proxima-nova", sans-serif;
 font-weight: 800;
 color: black;
 }
+
+
+
+
+
+

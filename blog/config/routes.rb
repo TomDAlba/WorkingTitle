@@ -2,6 +2,8 @@ Blog::Application.routes.draw do
   
 
 
+  resources :comments
+
   get "profiles/show"
   get 'projects/by_prompt', :to => 'projects#by_prompt', :as => 'by_prompt'
   get 'prompts/by_user', :to => 'prompts#by_user', :as => 'by_user'

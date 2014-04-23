@@ -11,10 +11,12 @@ class ProjectsController < ApplicationController
   
   def show
     @project = Project.find(params[:id])
+    @user = current_user
 
     @p_id = @project.prompt_id
     @prompt = Prompt.find(@p_id)
-
+    @comment = Comment.new( :project_id => @project.id, :user_id => current_user)
+    @all_comments = Comment.find(:all, :conditions => {:project_id => @project.id})
   end
   
   def new

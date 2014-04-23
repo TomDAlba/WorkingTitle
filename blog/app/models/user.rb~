@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name,
                    :last_name, :subdomain, :username, :skill, :bio, :color, :analytics,
                     :typekit, :login, :logo, :is_enabled, :external_link, :external_domain,
-                    :twitter, :external_resource
+                    :twitter, :external_resource, :num_projects, :num_prompts
 
   validates :last_name, :presence => true, :length => {:minimum => 1, :maximum => 20}
   validates_format_of :last_name, :with => /\A[a-zA-Z ']+\z/, :message => I18n.t(:only_letters)

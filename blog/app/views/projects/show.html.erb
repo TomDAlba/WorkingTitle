@@ -24,6 +24,10 @@
 </table>
 
 
+
+
+
+
 <table width="300" style="float: right;">
 <tr>
 <td><p><%= raw @prompt.title %></p></divn></td>
@@ -33,6 +37,21 @@
 </tr>
 </table>
 <div>
-
-
 </div>
+
+
+<% @all_comments.each do |comment| %>
+      <tr>
+        <td><%= comment.text %></td>
+      </tr>
+<% end %>
+
+
+
+<%= form_for @comment do |f| %>
+  <%= f.label :text, :style => "display:none"%>:
+  <%= f.hidden_field :project_id, :value => @project.id %>
+  <%= f.text_field :text %><br />
+
+  <%= f.submit%>
+<% end %>
