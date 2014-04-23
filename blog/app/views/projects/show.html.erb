@@ -9,8 +9,8 @@
 
 <p id="notice"><%= notice %></p>
 <body>
-<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link" %>
-<%= link_to 'Back', projects_path %>
+<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius large white button" %>
+<%= link_to 'Back', projects_path, :class => "nice radius large white button" %>
 </body>
 
 

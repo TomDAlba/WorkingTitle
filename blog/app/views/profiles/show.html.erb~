@@ -10,7 +10,7 @@
 
 
 
-<%= link_to 'My Entries', projects_path, :class => "nice radius large white button", :method => get%>
+<%= link_to 'My Entries', projects_path, :class => "nice radius large white button"%>
     <%= render "layouts/shared/footer"%>
 
 

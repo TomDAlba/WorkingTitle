@@ -24,7 +24,9 @@ class ProjectsController < ApplicationController
   
   def create
     logger.debug params
+    @user = User.find(params[:user])
     @project = Project.new(params[:project])
+    @project.user_id = @user.id
     @project.title = "Title"
     @project.body = "Enter your text here!"
     @project.prompt_id = params[:prompt]

@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20140422180747) do
   end
 
   create_table "prompts", force: true do |t|
+    t.integer  "user_id"
     t.text     "data"
     t.text     "title"
     t.datetime "created_at"

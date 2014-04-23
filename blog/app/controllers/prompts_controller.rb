@@ -1,6 +1,14 @@
 class PromptsController < ApplicationController
   before_action :set_prompt, only: [:show, :edit, :update, :destroy]
 
+  def by_user
+    @usr = User.find(params[:user])
+    @prompts = Prompt.find(:all, :conditions => { :user_id => @usr.id})
+
+  end
+
+
+
   # GET /prompts
   # GET /prompts.json
   def index
@@ -25,7 +33,9 @@ class PromptsController < ApplicationController
   # POST /prompts.json
   def create
     logger.debug params
+    @user = User.find(params[:user])
     @prompt = Prompt.new(prompt_params)
+    @prompt.user_id = @user.id
     @prompt.title = "Title goes here"
     @prompt.data = "Begin writing your prompt here"
 

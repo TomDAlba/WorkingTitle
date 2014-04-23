@@ -1,0 +1,29 @@
+
+  <%= render "layouts/shared/head"%>
+<body>
+  <%= render "layouts/shared/header"%>
+
+  <%= yield %>
+
+</body>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= link_to project.title, project %></td>
+    <td><%= button_to 'Destroy', project, method: :delete %></td>
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', prompts_path %>

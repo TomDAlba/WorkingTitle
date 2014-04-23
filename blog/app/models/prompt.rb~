@@ -1,9 +1,6 @@
 class Prompt < ActiveRecord::Base
   has_many :projects
-  before_save :set_default
+
   attr_accessible :title, :data
 
-  def set_default
-    self.data = "Create a new writing prompt!"
-  end
 end

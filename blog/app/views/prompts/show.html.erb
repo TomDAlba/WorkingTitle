@@ -9,7 +9,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link" %>
+<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius large white button" %>
 <%= link_to 'Back', prompts_path %>
 
 <h1><div id="title" data-mercury="full"><%= raw @prompt.title %></divn></h1>
