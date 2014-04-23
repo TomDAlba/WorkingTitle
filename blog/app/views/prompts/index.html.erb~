@@ -21,9 +21,9 @@
   <tbody>
     <% @prompts.each do |prompt| %>
       <tr>
-        <td id="tmp"><%= link_to prompt.title, prompt, :class => "nice radius large white button" %></td>
+        <td id="tmp"><%= link_to prompt.title, prompt, :class => "nice radius medium white button" %></td>
         <td ><%= button_to 'Use This Prompt', projects_path(:user => current_user ,:prompt => prompt) %></td>
-        <td id="tmp"><%= link_to 'Entries using this prompt', by_prompt_path( :prompt => prompt.id), :class => "nice radius large white button" %></td>
+        <td id="tmp"><%= link_to 'Entries using this prompt', by_prompt_path( :prompt => prompt.id), :class => "nice radius medium white button" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +31,4 @@
 
 <br>
 
-<%= button_to 'New Prompt', prompts_path(:user => current_user), :class => "nice radius large white button" %>
+<%= button_to 'New Prompt', prompts_path(:user => current_user), :class => "tiny button" %>

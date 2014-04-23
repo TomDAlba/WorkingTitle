@@ -7,11 +7,11 @@
       <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
       
       <fieldset class="textbox">
-        <%= f.text_field :login, :autocomplete => "on", :placeholder => "Username" %>
-        <%= f.password_field :password, :autocomplete => "on", :placeholder => "Password" %>
-        <%= f.button "SIGN IN", :class => "submit button", :style => "margin-top: 10px;" %>
+        <%= f.text_field :login, :autocomplete => "on", :placeholder => "Username", :style => "width: 300px;" %>
+        <%= f.password_field :password, :autocomplete => "on", :placeholder => "Password", :style => "width: 300px;" %>
+        <%= f.button "SIGN IN", :class => "submit button", :style => "margin-top: 10px; width: 300px;" %>
         <p>
-          <%= link_to "Forgot your password?", new_password_path(:user), :class => "forgot", :style => "padding:20px;" %>
+          <%= link_to "Forgot your password?", new_password_path(:user), :class => "forgot" %>
         </p>       
       </fieldset>
       <% end %>

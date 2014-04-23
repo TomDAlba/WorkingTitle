@@ -93,6 +93,7 @@ ActiveRecord::Schema.define(version: 20140423170640) do
     t.string   "title"
     t.string   "body"
     t.integer  "user_id"
+    t.integer  "num_comments", default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -135,15 +136,9 @@ ActiveRecord::Schema.define(version: 20140423170640) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.string   "first_name"
-    t.string   "last_name"
+    t.integer  "num_comments",           default: 0,     null: false
     t.string   "subdomain"
     t.string   "username"
-    t.string   "skill"
-    t.text     "bio"
-    t.string   "color"
-    t.text     "analytics"
-    t.text     "typekit"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "logo"

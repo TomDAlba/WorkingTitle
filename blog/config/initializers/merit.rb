@@ -31,6 +31,11 @@ Merit.setup do |config|
     description: "Wrote three entries"
   )
 
+  Merit::Badge.create!(
+    id:6,
+    name: "First Feedback!",
+    description: "Wrote your first comment"
+  )
 
 
   # Check rules on each request or in background

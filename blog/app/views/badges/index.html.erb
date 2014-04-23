@@ -7,9 +7,10 @@
 
 
 
-<ul>
+<body>
 <% current_user.badges.each do |badge| %>
-  <li><font size="20"><%= badge.name %></font></li>
-  <li><font size="6"><%= badge.description %></font></li>
+  <table border= "3px" style="width:300px">
+  <tr><td style="font-family: sans-serif; font-size: 30px;"><%= badge.name %></td></tr>
+  <tr><td style="font-family: sans-serif; font-size: 20px;"><%= badge.description %></td></tr>
 <% end %>
-</ul>
+</body>

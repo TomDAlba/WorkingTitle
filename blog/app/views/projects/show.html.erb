@@ -9,36 +9,34 @@
 
 <p id="notice"><%= notice %></p>
 <body>
-<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius large white button" %>
-<%= link_to 'Back', projects_path, :class => "nice radius large white button" %>
+<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius medium white button" %>
+<%= link_to 'Back', projects_path, :class => "nice radius medium white button" %>
 </body>
 
-
-<table width="600" style="float: left;">
-<tr>
-<td><div id="title" data-mercury="full"><%= raw @project.title %></divn></td>
-</tr>
-<tr>
-<td height="300"><div id="body" data-mercury="full"><%= raw @project.body %></divn></td>
-</tr>
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td width="50%">
+      <table width="100%" border="0" cellspacing="0" cellpadding="1">
+        <tr>
+         <td><div id="title" data-mercury="full"><%= raw @project.title %></divn></td>
+        </tr>
+        <tr>
+          <td height="300"><div id="body" data-mercury="full"><%= raw @project.body %></divn></td>
+        </tr>
+      </table>
+    </td>
+    <td width="50%">
+      <table width="100%">
+        <tr>
+          <td><p><%= raw @prompt.title %></p></divn></td>
+        </tr>
+        <tr>
+          <td height="300"><p><%= raw @prompt.data %></p></divn></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 </table>
-
-
-
-
-
-
-<table width="300" style="float: right;">
-<tr>
-<td><p><%= raw @prompt.title %></p></divn></td>
-</tr>
-<tr>
-<td height="300"><p><%= raw @prompt.data %></p></divn></td>
-</tr>
-</table>
-<div>
-</div>
-
 
 <% @all_comments.each do |comment| %>
       <tr>

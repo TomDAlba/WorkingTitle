@@ -5,7 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.string :body
       t.integer :user_id
-
+      t.integer :num_comments, default: 0, null: false
       t.timestamps
     end
   end

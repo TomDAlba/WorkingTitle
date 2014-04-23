@@ -22,10 +22,7 @@
     <%= f.label :email, "Your Email" %>
     <%= f.text_field :email, :class => "pane_input"%>
   </div>
-  <div class="twelve columns">
-    <%= f.label :skill, "Your Profession" %>
-    <%= f.text_field :skill, :class => "pane_input"%>
-  </div>
+
   <div class="twelve columns">
     <%= f.label :password, "Your Password (Min. 8 Char)" %>
     <%= f.password_field :password, :class => "pane_input"%>
@@ -38,23 +35,11 @@
     <%= f.label :username, "Your username" %>
     <%= f.text_field :username, :class => "pane_input"%>
   </div>
-  <div class="twelve columns">
-    <%= f.label :color, "Your Network Color (#HEX format - No Black)" %>
-    <%= f.text_field :color, :class => "pane_input"%>
-  </div>
-  <div class="twelve columns">
-    <%= f.label :bio, "Your Bio – Max 80 Char." %>
-    <%= f.text_field :bio, :class => "pane_input"%>
-  </div>
-  <div class="twelve columns">
-    <%= f.label :analytics, "Link to the icon of your choice on thenounproject.com" %>
-    <%= f.text_field :analytics, :class => "pane_input"%>
-  </div>
-  
+
   </div>
   <div class="twelve columns">
      <p>
-       <%= f.submit "Join", :class => "nice radius large white button" %>
+       <%= f.submit "Join", :class => "nice radius medium white button" %>
     </p>
   </div>							
 <% end %>

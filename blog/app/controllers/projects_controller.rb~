@@ -15,7 +15,7 @@ class ProjectsController < ApplicationController
 
     @p_id = @project.prompt_id
     @prompt = Prompt.find(@p_id)
-    @comment = Comment.new(:all, :project_id => @project.id)
+    @comment = Comment.new( :project_id => @project.id, :user_id => current_user)
     @all_comments = Comment.find(:all, :conditions => {:project_id => @project.id})
   end
   

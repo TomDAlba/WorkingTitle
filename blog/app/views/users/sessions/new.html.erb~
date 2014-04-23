@@ -1,0 +1,20 @@
+<%= render "layouts/shared/form_error_e", :obj => resource %>
+
+<div id="main-content" class="container clearfix" >
+  <div class="row">
+    <div class="twelve columns">
+      <h5>Hey! Welcome back!</h5>
+      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      
+      <fieldset class="textbox">
+        <%= f.text_field :login, :autocomplete => "on", :placeholder => "Username", :style => "width: 300px;" %>
+        <%= f.password_field :password, :autocomplete => "on", :placeholder => "Password" %>
+        <%= f.button "SIGN IN", :class => "submit button", :style => "margin-top: 10px; width: 300px;" %>
+        <p>
+          <%= link_to "Forgot your password?", new_password_path(:user), :class => "forgot" %>
+        </p>       
+      </fieldset>
+      <% end %>
+    </div>			
+  </div>
+</div>

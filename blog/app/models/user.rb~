@@ -33,6 +33,7 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :roles
   has_one :profile
   has_many :projects
+  has_many :comments
 
   scope :author, joins(:roles).where('roles.alias = ?', "User")
   scope :author_enabled, lambda{|limit|

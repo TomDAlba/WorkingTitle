@@ -3073,10 +3073,10 @@ p.vevent abbr {
   font-family: proxima-nova, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1;
+
   margin: 0;
   outline: none;
-  padding: 15px 11px 11px 11px;
+
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -3281,19 +3281,19 @@ p.vevent abbr {
 /* line 2363, ../../../app/assets/stylesheets/fe/foundation.css.scss */
 input[type=submit].button, button.button {
   -webkit-appearance: none;
-  width: 100%;
+
   background: #000;
   border: none;
   color: white;
   cursor: pointer;
   display: inline-block;
   font-family: "proxima-nova",sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 800;
-  line-height: 2;
+
   margin: 0;
   outline: none;
-  padding: 10px 20px 11px;
+
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -3308,8 +3308,8 @@ input[type=submit].button, button.button {
 
 /* line 2389, ../../../app/assets/stylesheets/fe/foundation.css.scss */
 a.forgot {
-  width: 100%;
-  background: lightSlateGray;
+  width: 300px;
+  background: black;
   border: none;
   color: white !important;
   cursor: pointer;
@@ -3344,7 +3344,7 @@ a.forgot {
   /* line 57, /var/www/foundation_generator/shared/bundle/ruby/1.9.1/bundler/gems/foundation-a6e45645cf38/stylesheets/foundation/buttons.scss */
   /* line 2422, ../../../app/assets/stylesheets/fe/foundation.css.scss */
   button.button, input[type="submit"].button {
-    width: 100%;
+
     padding-left: 0;
     padding-right: 0;
   }
@@ -4754,8 +4754,8 @@ input[type="text"] {
   font-size: 25px;
   margin: 0 0 12px 0;
   padding: 6px;
-  height: 62px;
-  width: 100%;
+
+
   margin-top: 20px;
   font-family: "adelle-sans", sans-serif;
   font-weight: 100;
@@ -4803,11 +4803,11 @@ input, input[type="password"], input[type="search"], isindex {
   font-size: 25px;
   margin: 0 0 12px 0;
   padding: 6px;
-  height: 62px;
-  width: 100%;
+
+
   background: #eee;
   font-family: 'adelle-sans',sans-serif;
-  font-weight: 100;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -5609,8 +5609,7 @@ font-weight: 800;
 color: black;
 }
 
-
-
-
-
+#comment_form{
+font-size: 100px;
+}
 

@@ -27,6 +27,12 @@ class CommentsController < ApplicationController
 
     @comment = Comment.new(params[:comment])
 
+    current_user.num_comments += 1
+    if current_user.num_comments == 1
+      current_user.add_badge(6)
+    end
+    current_user.save
+
     respond_to do |format|
       if @comment.save
         @comment.update_attribute(:user_id, current_user.id)

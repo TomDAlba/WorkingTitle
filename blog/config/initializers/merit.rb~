@@ -10,25 +10,25 @@ Merit.setup do |config|
   Merit::Badge.create!(
     id:2,
     name: "First Prompt!",
-    description: "Created your first prompt!"
+    description: "Created your first prompt"
   )
 
   Merit::Badge.create!(
     id:3,
     name: "First Entry!",
-    description: "Wrote your first entry!"
+    description: "Wrote your first entry"
   )
 
   Merit::Badge.create!(
     id:4,
     name: "Prompt Beginner!",
-    description: "Created 5 prompts!"
+    description: "Created 5 prompts"
   )
 
   Merit::Badge.create!(
     id:5,
     name: "Writing Beginner!",
-    description: "Wrote three entries!"
+    description: "Wrote three entries"
   )
 
 

@@ -1,18 +1,22 @@
 
-  <%= render "layouts/shared/head"%>
-<body>
-  <%= render "layouts/shared/header"%>
+<%= render "layouts/shared/head"%>
 
-  <%= yield %>
+<%= render "layouts/shared/header"%>
 
-</body>
+<%= yield %>
+
+
 
 <p id="notice"><%= notice %></p>
 
-<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius large white button" %>
-<%= link_to 'Back', prompts_path , :class => "  medium  button"%>
+<%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius medium white button" %>
+<%= link_to 'Back', prompts_path,:class => "nice radius medium white button"  %>
+<table width="50%">
+  <tr>
+    <td><div id="title" data-mercury="full"><%= raw @prompt.title %></div></td>
+  </tr>
+  <tr>
+    <td><div id="body" data-mercury="full"><%= raw @prompt.data %></div></td>
+  </tr>
+</table>
 
-<h1><div id="title" data-mercury="full"><%= raw @prompt.title %></divn></h1>
-<h1><div id="body" data-mercury="full"><%= raw @prompt.data %></divn></h1>
-
-</div>

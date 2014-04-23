@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.find(:all)
+    @projects = Project.find(:all, :conditions => { :user_id => current_user.id})
   end
 
   def by_prompt
