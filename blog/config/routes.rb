@@ -19,6 +19,7 @@ Blog::Application.routes.draw do
   get "domains/show"
   resources :roles
   resources :members
+  resources :badges
   get "join/index"
   post "join/create"
   

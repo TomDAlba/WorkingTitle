@@ -1,0 +1,5 @@
+class BadgesController < ApplicationController
+  def index
+    @user = User.find(:id)
+  end
+end

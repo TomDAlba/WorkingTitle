@@ -34,11 +34,23 @@ class PromptsController < ApplicationController
   def create
     logger.debug params
     @user = User.find(params[:user])
+    @user.num_prompts += 1
+    
     @prompt = Prompt.new(prompt_params)
     @prompt.user_id = @user.id
     @prompt.title = "Title goes here"
     @prompt.data = "Begin writing your prompt here"
 
+
+    if @user.num_prompts == 1
+      @user.add_badge(2)
+    end
+
+    if @user.num_prompts == 5
+      @user.add_badge(4)
+    end
+
+    @user.save
     respond_to do |format|
       if @prompt.save
         format.html { redirect_to @prompt, notice: 'Prompt was successfully created.' }

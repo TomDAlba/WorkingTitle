@@ -30,6 +30,18 @@ class ProjectsController < ApplicationController
     @project.title = "Title"
     @project.body = "Enter your text here!"
     @project.prompt_id = params[:prompt]
+
+    @user.num_projects += 1
+    if @user.num_projects == 1
+      @user.add_badge(3)
+    end
+
+    if @user.num_projects == 3
+      @user.add_badge(5)
+    end
+
+    @user.save
+
     if @project.save
       flash[:notice] = "Successfully created project."
       redirect_to @project

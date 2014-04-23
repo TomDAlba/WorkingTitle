@@ -1,17 +1,19 @@
 
   <%= render "layouts/shared/head"%>
-<body>
+
   <%= render "layouts/shared/header"%>
 
   <%= yield %>
 
-</body>
+
 <h1>My Profile</h1>
 
 
 
 <%= link_to 'My Entries', projects_path, :class => "nice radius large white button"%>
 <%= link_to 'My Prompts', by_user_path(:user => current_user), :class => "nice radius large white button"%>
+<%= link_to 'My Badges', badges_path, :class => "nice radius large white button"%>
+
 
 <%= render "layouts/shared/footer"%>
 

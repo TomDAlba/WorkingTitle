@@ -1,0 +1,15 @@
+
+<%= render "layouts/shared/head"%>
+
+<%= render "layouts/shared/header"%>
+
+<%= yield %>
+
+
+
+<ul>
+<% current_user.badges.each do |badge| %>
+  <li><font size="20"><%= badge.name %></font></li>
+  <li><font size="6"><%= badge.description %></font></li>
+<% end %>
+</ul>
