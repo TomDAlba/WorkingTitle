@@ -1,5 +1,6 @@
 class PromptsController < ApplicationController
   before_action :set_prompt, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   def by_user
     @usr = User.find(params[:user])
