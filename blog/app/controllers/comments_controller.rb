@@ -3,17 +3,17 @@ class CommentsController < ApplicationController
 
   # GET /comments
   # GET /comments.json
-  def index
+  def index #displaying page index
     @comments = Comment.all
   end
 
   # GET /comments/1
   # GET /comments/1.json
-  def show
+  def show 
   end
 
   # GET /comments/new
-  def new
+  def new #create new comment
     @comment = Comment.new
   end
 
@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
 
   # POST /comments
   # POST /comments.json
-  def create
+  def create #creating comment
 
     @comment = Comment.new(params[:comment])
 
@@ -36,6 +36,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       if @comment.save
         @comment.update_attribute(:user_id, current_user.id)
+        @comment.update_attribute(:username, current_user.username)
         @comment.save
         format.html { redirect_to :back, notice: 'Comment was successfully created.' }
         format.json { render action: 'show', status: :created, location: @comment }
@@ -48,7 +49,7 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
-  def update
+  def update #updating comment
     respond_to do |format|
       if @comment.update(comment_params)
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
@@ -62,7 +63,7 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   # DELETE /comments/1.json
-  def destroy
+  def destroy #destroying comment
     @comment.destroy
     respond_to do |format|
       format.html { redirect_to comments_url }
@@ -72,7 +73,7 @@ class CommentsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_comment
+    def set_comment #set parameters
       @comment = Comment.find(params[:id])
     end
 

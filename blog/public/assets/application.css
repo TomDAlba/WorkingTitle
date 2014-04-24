@@ -3321,7 +3321,6 @@ a.forgot {
   margin: 0;
   margin-top: 10px;
   outline: none;
-
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -4751,9 +4750,9 @@ input[type="text"] {
   box-shadow: none;
   color: black;
   display: block;
-  font-size: 25px;
-  margin: 0 0 12px 0;
-  padding: 6px;
+
+
+
 
 
   margin-top: 20px;
@@ -4800,8 +4799,7 @@ input, input[type="password"], input[type="search"], isindex {
   box-shadow: none;
   color: black;
   display: block;
-  font-size: 25px;
-  margin: 0 0 12px 0;
+
   padding: 6px;
 
 

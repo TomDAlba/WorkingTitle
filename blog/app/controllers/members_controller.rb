@@ -2,7 +2,7 @@ class MembersController < ApplicationController
   authorize_resource :class => false, :except => [:index,:show]
 
 
-  def index
+  def index #set variables for users index
 
     @post = Post.all
 
@@ -21,7 +21,7 @@ class MembersController < ApplicationController
     end
   end
 
-  def show
+  def show #display user
     @user = User.find(params[:id])
 
     respond_to do |format|
@@ -32,7 +32,7 @@ class MembersController < ApplicationController
 
   # GET /users/new
   # GET /users/new.json
-  def new
+  def new #new user generation
     @user = User.new
 
     respond_to do |format|
@@ -41,13 +41,13 @@ class MembersController < ApplicationController
     end
   end
 
-  def edit
+  def edit #edit user params
     @user = User.find(params[:id])
     authorize! :edit, @user
     render (current_user.role?(:admin) ? :edit : :setting)
   end
 
-  def create
+  def create #generate a new user in db
     @user = User.new(params[:user])
     @user.roles << Role.find_by_alias(:user)
     @user.subdomain = @user.username
@@ -61,7 +61,7 @@ class MembersController < ApplicationController
     end
   end
 
-  def update
+  def update #update in db
     @user = User.find(params[:id])
     params_user
     authorize! :update, @user
@@ -74,7 +74,7 @@ class MembersController < ApplicationController
     end
   end
 
-  def destroy
+  def destroy #remove user from db
     @user = User.find(params[:id])
     @user.destroy
 
@@ -89,7 +89,7 @@ class MembersController < ApplicationController
     end
   end
 
-  def params_user
+  def params_user #generate params
     _params = [:skill, :email, :password,
         :password_confirmation,
         :color, :logo, :external_link,

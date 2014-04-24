@@ -1,0 +1,34 @@
+
+  <%= render "layouts/shared/head"%>
+<body>
+  <%= render "layouts/shared/header"%>
+
+  <%= yield %>
+
+</body>
+
+<h1>Listing prompts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prompts.each do |prompt| %>
+      <tr>
+        <td id="tmp"><%= link_to prompt.title, prompt %></td>
+        <td ><%= button_to 'Use This Prompt', projects_path(:user => current_user ,:prompt => prompt) %></td>
+        <td id="tmp"><%= link_to 'Entries using this prompt', by_prompt_path( :prompt => prompt.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to 'New Prompt', prompts_path(:user => current_user) %>

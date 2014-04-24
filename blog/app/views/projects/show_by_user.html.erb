@@ -1,0 +1,29 @@
+
+  <%= render "layouts/shared/head"%>
+
+  <%= render "layouts/shared/header"%>
+
+  <%= yield %>
+
+
+<h1>Entries Belonging to <%= raw @comm_user.username %></h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= link_to project.title, project, :class => "nice radius large white button" %></td>
+
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

@@ -10,14 +10,7 @@
 
 <%= form_for @user, :url => join_create_path, :method =>:post do |f| %>
   <%= hidden_field_tag "from", "join" %>
-  <div class="twelve columns">
-    <%= f.label :first_name, "First Name" %>
-    <%= f.text_field :first_name, :class => "pane_input"%>
-  </div>
-  <div class="twelve columns">
-    <%= f.label :last_name, "Last Name" %>
-    <%= f.text_field :last_name, :class => "pane_input"%>        
-  </div>
+  
   <div class="twelve columns">
     <%= f.label :email, "Your Email" %>
     <%= f.text_field :email, :class => "pane_input"%>

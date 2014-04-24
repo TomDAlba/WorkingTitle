@@ -3,9 +3,8 @@ class JoinController < ApplicationController
     @user = User.new
   end
   
-  def create
+  def create #create a new user
     @user = User.new(params[:user])
-    #@user.roles << Role.find_by_alias(:user)
     @user.is_enabled = false
     @user.add_badge(1)
     @user.subdomain = @user.username

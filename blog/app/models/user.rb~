@@ -16,10 +16,7 @@ class User < ActiveRecord::Base
                     :typekit, :login, :logo, :is_enabled, :external_link, :external_domain,
                     :twitter, :external_resource, :num_projects, :num_prompts
 
-  validates :last_name, :presence => true, :length => {:minimum => 1, :maximum => 20}
-  validates_format_of :last_name, :with => /\A[a-zA-Z ']+\z/, :message => I18n.t(:only_letters)
-  validates :first_name, :presence => true, :length => {:minimum => 1, :maximum => 20}
-  validates_format_of :first_name, :with => /\A[a-zA-Z ']+\z/, :message => I18n.t(:only_letters)
+  
   validates :username, :presence => true, :length => {:minimum => 4, :maximum => 20}, :uniqueness => true
   validate :username_not_only_number, :allow_blank => true
   validates_format_of :username, :with => /\A[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true

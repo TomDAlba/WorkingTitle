@@ -1,11 +1,13 @@
 
   <%= render "layouts/shared/head"%>
-<body>
+
   <%= render "layouts/shared/header"%>
 
   <%= yield %>
 
-</body>
+<h2>Entries Using Prompt <%= raw @prompt.title %></h2>
+
+
 
 <table>
   <tr>

@@ -7,6 +7,7 @@ class JoinController < ApplicationController
     @user = User.new(params[:user])
     #@user.roles << Role.find_by_alias(:user)
     @user.is_enabled = false
+    @user.add_badge(1)
     @user.subdomain = @user.username
     
     respond_to do |format|
