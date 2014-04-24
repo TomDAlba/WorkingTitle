@@ -4,7 +4,7 @@ class PromptsController < ApplicationController
 
   def by_user #display froms for specific user
     @usr = User.find(params[:user])
-    @prompts = Prompt.find(:all, :conditions => { :user_id => @usr.id})
+    @prompts = Prompt.find(:all, :conditions => { :user_id => current_user})
 
   end
 
@@ -40,7 +40,8 @@ class PromptsController < ApplicationController
     @user.num_prompts += 1
     
     @prompt = Prompt.new(prompt_params)
-    @prompt.user_id = @user.id
+    @prompt.user_id = params[:user]
+    logger.debug current_user.id
     @prompt.title = "Title goes here"
     @prompt.data = "Begin writing your prompt here"
 
