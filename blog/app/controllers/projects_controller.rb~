@@ -54,7 +54,6 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Successfully created project."
       redirect_to @project
     else
-
     end
   end
   

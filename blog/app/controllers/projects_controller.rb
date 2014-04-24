@@ -67,11 +67,13 @@ class ProjectsController < ApplicationController
     @created = @project_old.created_at
     @old_id = @project_old.id
     @prompt = @project_old.prompt_id
+    @old_user = @project_old.user_id
     @project_old.destroy
 
     project.title = params[:content][:title][:value]
     project.body = params[:content][:body][:value]
     project.id = @old_id
+    project.user_id = @old_user
     project.created_at = @created
     project.prompt_id = @prompt
 
