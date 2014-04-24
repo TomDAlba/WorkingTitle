@@ -7,7 +7,7 @@
 
 
 
-<p id="notice"><%= notice %></p>
+
 
 <h2>Entry Belonging to <%= @project_user.username %></h2>
 
