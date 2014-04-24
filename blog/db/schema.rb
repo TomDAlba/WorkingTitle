@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20140423170640) do
     t.integer  "user_id"
     t.text     "text"
     t.integer  "project_id"
+    t.text     "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

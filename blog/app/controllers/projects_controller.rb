@@ -8,11 +8,17 @@ class ProjectsController < ApplicationController
     logger.debug Project.exists?(prompt_id: 7)
     @projects = Project.find(:all, :conditions => { :prompt_id => @prompt.id})
   end
+
+  def show_by_user
+    @comm_user = User.find(params[:comment_user])
+    @projects = Project.find(:all, :conditions => { :user_id => @comm_user.id })
+  end
   
   def show
     @project = Project.find(params[:id])
     @user = current_user
-
+    @project_creator = @project.user_id
+    @project_user = User.find(@project_creator)
     @p_id = @project.prompt_id
     @prompt = Prompt.find(@p_id)
     @comment = Comment.new( :project_id => @project.id, :user_id => current_user)

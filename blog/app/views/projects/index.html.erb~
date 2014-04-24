@@ -26,4 +26,4 @@
 
 <br />
 
-<%= link_to 'New Project', prompts_path %>
+<%= link_to 'New Project', prompts_path, :class => "nice radius medium white button" %>

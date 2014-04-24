@@ -1,18 +1,53 @@
 
   <%= render "layouts/shared/head"%>
-<body>
+
   <%= render "layouts/shared/header"%>
 
   <%= yield %>
 
-</body>
 
-<p id="notice"><%= notice %></p>
+
+
+
+<h2>Entry Belonging to <%= @project_user.username %></h2>
+
 <body>
+
+<% if @project_creator==current_user.id %>
 <%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius medium white button" %>
+
+<% end %>
+
 <%= link_to 'Back', projects_path, :class => "nice radius medium white button" %>
+
+
 </body>
 
+<table width="50%" border="0" cellspacing="0" cellpadding="5"> 
+<tr>
+  <table width="50%">
+    <tr>
+      <td><p><%= raw @prompt.title %></p></divn></td>
+    </tr>
+    <tr>
+      <td><p><%= raw @prompt.data %></p></divn></td>
+    </tr>
+  </table>
+</tr>
+<tr>
+<table width="50%">
+        <tr>
+          <td><p><%= raw @prompt.title %></p></divn></td>
+        </tr>
+        <tr>
+          <td height="300"><p><%= raw @prompt.data %></p></divn></td>
+        </tr>
+      </table>
+</tr>
+</table>
+
+
+<!--
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
   <tr>
     <td width="50%">
@@ -38,10 +73,15 @@
   </tr>
 </table>
 
+-->
+
 <% @all_comments.each do |comment| %>
-      <tr>
-        <td><%= comment.text %></td>
-      </tr>
+      <table style="width=25%; table layout: fixed;">
+        <tr>
+          <td style="font-weight:bold;width:50px; link:black; visited:black"><%= link_to comment.username, show_by_user_path( :comment_user => comment.user_id) %>:</td>
+          <td style="word-wrap: break-word; width:500px; text-align:left; overflow:hidden;"><%= comment.text %></td>
+        </tr>
+      </table>
 <% end %>
 
 
