@@ -7,11 +7,11 @@
 
 
 
-
-
 <h2>Entry Belonging to <%= @project_user.username %></h2>
 
 <body>
+
+<!--Detects if the current user actually made this project-->
 
 <% if @project_creator==current_user.id %>
 <%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius medium white button" %>
@@ -46,35 +46,7 @@
 </tr>
 </table>
 
-
-<!--
-<table width="100%" border="0" cellspacing="0" cellpadding="5">
-  <tr>
-    <td width="50%">
-      <table width="100%" border="0" cellspacing="0" cellpadding="1">
-        <tr>
-         <td><div id="title" data-mercury="full"><%= raw @project.title %></divn></td>
-        </tr>
-        <tr>
-          <td height="300"><div id="body" data-mercury="full"><%= raw @project.body %></divn></td>
-        </tr>
-      </table>
-    </td>
-    <td width="50%">
-      <table width="100%">
-        <tr>
-          <td><p><%= raw @prompt.title %></p></divn></td>
-        </tr>
-        <tr>
-          <td height="300"><p><%= raw @prompt.data %></p></divn></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
--->
-
+<!--Standardizes form for each comment-->
 <% @all_comments.each do |comment| %>
       <table style="width=25%; table layout: fixed;">
         <tr>
