@@ -40,7 +40,7 @@ class PromptsController < ApplicationController
     @user.num_prompts += 1
     
     @prompt = Prompt.new(prompt_params)
-    @prompt.user_id = @user
+    @prompt.user_id = params[:user]
     logger.debug current_user.id
     @prompt.title = "Title goes here"
     @prompt.data = "Begin writing your prompt here"

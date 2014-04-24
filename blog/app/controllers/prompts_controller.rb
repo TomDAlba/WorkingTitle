@@ -73,12 +73,14 @@ class PromptsController < ApplicationController
     @prompt_old = Prompt.find(params[:id])
     @created = @prompt_old.created_at
     @old_id = @prompt_old.id
+    @old_user = @prompt_old.user_id
     @prompt_old.destroy
 
     prompt.title = params[:content][:title][:value]
     prompt.data = params[:content][:body][:value]
     prompt.id = @old_id
     prompt.created_at = @created
+    prompt.user_id = @old_user
 
 
     if prompt.save!
