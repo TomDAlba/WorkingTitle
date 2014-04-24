@@ -16,17 +16,12 @@ class User < ActiveRecord::Base
                     :typekit, :login, :logo, :is_enabled, :external_link, :external_domain,
                     :twitter, :external_resource, :num_projects, :num_prompts
 
-  
+  #Make sure data entered in corrently
   validates :username, :presence => true, :length => {:minimum => 4, :maximum => 20}, :uniqueness => true
   validate :username_not_only_number, :allow_blank => true
   validates_format_of :username, :with => /\A[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true
   validates :subdomain, :presence => true, :length => {:minimum => 4, :maximum => 15}, :uniqueness => true
   validates_format_of :subdomain, :with => /\A[a-z0-9]+\z/
-  #validates :skill, :presence => true, :length => {:minimum => 4, :maximum => 40}
-  #validates :bio, :presence => true, :length => {:minimum => 4, :maximum => 200}
-  #validates :color, :presence => true, :length => {:minimum => 4, :maximum => 10}
-  #validates_format_of :color, :with => /\A[0-9]+\z/, :message => I18n.t(:only_numbers)
-
   has_and_belongs_to_many :roles
   has_one :profile
   has_many :projects
@@ -46,11 +41,14 @@ class User < ActiveRecord::Base
       errors.add(:username, I18n.t(:can_not_only_numbers))
     end
   end
-
+  
+  # Generate roles for user
   def role?(role)
     !!self.roles.select('name').find_by_name(role.to_s.camelize)
   end
+  
 
+ #Gereate login conditions
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)

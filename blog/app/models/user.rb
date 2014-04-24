@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   validate :username_not_only_number, :allow_blank => true
   validates_format_of :username, :with => /\A[A-Za-z0-9_.&]*\z/, :message => I18n.t(:only_letters_digit_dot), :allow_blank => true
   validates :subdomain, :presence => true, :length => {:minimum => 4, :maximum => 15}, :uniqueness => true
-  validates_format_of :subdomain, :with => /\A[a-z0-9]+\z/
+  validates_format_of :subdomain, :with => /\A[A-Za-z0-9]+\z/
   has_and_belongs_to_many :roles
   has_one :profile
   has_many :projects
