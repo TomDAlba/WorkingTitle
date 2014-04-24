@@ -1,20 +1,20 @@
 class ProjectsController < ApplicationController
-  def index
+  def index #projects to display in index
     @projects = Project.find(:all, :conditions => { :user_id => current_user.id})
   end
 
-  def by_prompt
+  def by_prompt #display projects belonging to prompt
     @prompt = Prompt.find(params[:prompt])
     logger.debug Project.exists?(prompt_id: 7)
     @projects = Project.find(:all, :conditions => { :prompt_id => @prompt.id})
   end
 
-  def show_by_user
+  def show_by_user #display projects belonging to user
     @comm_user = User.find(params[:comment_user])
     @projects = Project.find(:all, :conditions => { :user_id => @comm_user.id })
   end
   
-  def show
+  def show #display a specific project 
     @project = Project.find(params[:id])
     @user = current_user
     @project_creator = @project.user_id
@@ -25,12 +25,12 @@ class ProjectsController < ApplicationController
     @all_comments = Comment.find(:all, :conditions => {:project_id => @project.id})
   end
   
-  def new
+  def new #create new project
     @project = Project.new
 
   end
   
-  def create
+  def create #add project to db
     logger.debug params
     @user = User.find(params[:user])
     @project = Project.new(params[:project])
@@ -54,17 +54,14 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Successfully created project."
       redirect_to @project
     else
-
     end
   end
   
-  def edit
+  def edit#edit the project 
     @project = Project.find(params[:id])
-
-
   end
   
-  def update
+  def update #update project in db
     project = Project.new(params[:project])
     @project_old = Project.find(params[:id])
     @created = @project_old.created_at
@@ -86,7 +83,7 @@ class ProjectsController < ApplicationController
     render text: ""
   end
   
-  def destroy
+  def destroy #destroy project in db
     @project = Project.find(params[:id])
     @project.destroy
     flash[:notice] = "Successfully destroyed project."

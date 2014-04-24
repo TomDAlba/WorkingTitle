@@ -1,5 +1,5 @@
 class LandingController < ApplicationController
-  def index
+  def index #generate homepage
 
     respond_to do |format|
       if current_user.present?
