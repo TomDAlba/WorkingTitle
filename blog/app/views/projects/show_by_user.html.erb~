@@ -6,13 +6,7 @@
   <%= yield %>
 
 
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Entries Belonging to <%= raw @comm_user.username %></h1>
 
 <% @projects.each do |project| %>
   <tr>

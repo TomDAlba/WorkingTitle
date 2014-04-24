@@ -18,6 +18,8 @@ class PromptsController < ApplicationController
   # GET /prompts/1
   # GET /prompts/1.json
   def show
+    @pid = current_user
+    @prompt = Prompt.find(params[:id])
   end
 
   # GET /prompts/new

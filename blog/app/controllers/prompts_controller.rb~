@@ -18,6 +18,7 @@ class PromptsController < ApplicationController
   # GET /prompts/1
   # GET /prompts/1.json
   def show
+    @pid = current_user
   end
 
   # GET /prompts/new
@@ -47,7 +48,8 @@ class PromptsController < ApplicationController
     end
 
     if @user.num_prompts == 5
-      @user.add_badge(2)
+      @user.add_badge(4)
+    end
 
     @user.save
     respond_to do |format|

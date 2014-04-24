@@ -5,11 +5,14 @@
 
 <%= yield %>
 
-
-
-<p id="notice"><%= notice %></p>
-
+<% if @prompt.user_id==current_user.id %>
 <%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", :class => "nice radius medium white button" %>
+
+<% end %>
+
+<%= raw @prompt.user_id %><%= raw @pid.id %>
+
+
 <%= link_to 'Back', prompts_path,:class => "nice radius medium white button"  %>
 <table width="50%">
   <tr>
